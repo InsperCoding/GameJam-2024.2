@@ -1,10 +1,14 @@
+join Amigo leftmost 
 Amigo: Olha ali!
 
+join Protagonista left 
 Protagonista: Isabella?
 
+join menina rightmost 
 menina: ME AJUDEM, POR FAVOR!
 
 Protagonista:Calma, vai ficar tudo bem.
+
 
 curupira: Eu duvido muito.
 # O curupira sai de uma sobra atrás da menina

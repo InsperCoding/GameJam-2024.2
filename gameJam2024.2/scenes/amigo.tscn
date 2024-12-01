@@ -1,9 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgd2maxn5e08c"]
+[gd_scene load_steps=16 format=3 uid="uid://bgd2maxn5e08c"]
 
 [ext_resource type="Texture2D" uid="uid://diujqg6ihfdmu" path="res://art/sprites/Jefferson/jefferson_00.png" id="1_7fl5b"]
+[ext_resource type="Script" path="res://scripts/amigo.gd" id="1_fsumx"]
 [ext_resource type="Texture2D" uid="uid://caod5y6gbfwpc" path="res://art/sprites/Jefferson/jefferson_09.png" id="2_7la2v"]
+[ext_resource type="Texture2D" uid="uid://xcwqwh6mj61j" path="res://art/sprites/Jefferson/jefferson_01.png" id="2_uieuh"]
 [ext_resource type="Texture2D" uid="uid://gh6nnuqylylb" path="res://art/sprites/Jefferson/jefferson_03.png" id="3_ctvqf"]
+[ext_resource type="Texture2D" uid="uid://dul6l6qyspntf" path="res://art/sprites/Jefferson/jefferson_02.png" id="3_mhpyq"]
 [ext_resource type="Texture2D" uid="uid://csgq8ddr52pcv" path="res://art/sprites/Jefferson/jefferson_06.png" id="4_bjvdf"]
+[ext_resource type="Texture2D" uid="uid://dnmu0vyq06rsu" path="res://art/sprites/Jefferson/jefferson_07.png" id="5_k0mxi"]
+[ext_resource type="Texture2D" uid="uid://dgvgaf043n8q5" path="res://art/sprites/Jefferson/jefferson_08.png" id="6_pc0ne"]
+[ext_resource type="Texture2D" uid="uid://cqd10fs478gbx" path="res://art/sprites/Jefferson/jefferson_04.png" id="8_l4nch"]
+[ext_resource type="Texture2D" uid="uid://gt04iygvoqwb" path="res://art/sprites/Jefferson/jefferson_05.png" id="9_rfcyn"]
+[ext_resource type="Texture2D" uid="uid://bmcjev8b6bkbu" path="res://art/sprites/Jefferson/jefferson_10.png" id="11_7liu0"]
+[ext_resource type="Texture2D" uid="uid://f8c4wu4s60kd" path="res://art/sprites/Jefferson/jefferson_11.png" id="12_xwnu3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ie1ax"]
 animations = [{
@@ -17,10 +26,32 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_uieuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mhpyq")
+}],
+"loop": true,
+"name": &"down_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_7la2v")
 }],
 "loop": true,
 "name": &"left_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_k0mxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pc0ne")
+}],
+"loop": true,
+"name": &"left_walk",
 "speed": 5.0
 }, {
 "frames": [{
@@ -33,22 +64,46 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("8_l4nch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rfcyn")
+}],
+"loop": true,
+"name": &"right_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_bjvdf")
 }],
 "loop": true,
 "name": &"up_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_7liu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xwnu3")
+}],
+"loop": true,
+"name": &"up_walk",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuy2f"]
 size = Vector2(344, 744)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="RigidBody2D"]
 scale = Vector2(0.3, 0.3)
+gravity_scale = 0.0
+script = ExtResource("1_fsumx")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ie1ax")
-animation = &"up_idle"
+animation = &"down_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(12, 28)

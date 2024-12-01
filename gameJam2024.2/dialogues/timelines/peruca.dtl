@@ -1,0 +1,16 @@
+set {Global.player_anda} = false
+Nativo: Eu estava andando pela floresta quando encontrei essa peruca.
+Nativo: Não tinha ninguém por perto. Então peguei pra mim.
+
+if {Global.viu_a_cuca} == false:
+	- Ir embora
+		[end_timeline]
+else:
+	- Ir embora
+		[end_timeline] 
+	- Eu encontrei a dona da peruca
+		Nativo: Puxa, que pena.
+		Nativo: Mas se ela quer de volta, pode ficar.
+		set {Global.peruca} = true
+		set {Global.player_anda} = true
+		[end_timeline]

@@ -39,6 +39,7 @@ directories/dtl_directory={
 "caverna": "res://dialogues/timelines/caverna.dtl",
 "com_a_cuca": "res://dialogues/timelines/com_a_cuca.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
+"peruca": "res://dialogues/timelines/peruca.dtl",
 "pos_maldicao": "res://dialogues/timelines/pos_maldicao.dtl"
 }
 glossary/default_case_sensitive=true

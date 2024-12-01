@@ -1,5 +1,6 @@
 label Primeiro encontro
 set {Global.player_anda} = false
+set {Global.viu_a_cuca} = true
 
 join Cuca (Careca) right [mirrored="true"]
 Cuca: Quem ousa invadir meu domínio?!
