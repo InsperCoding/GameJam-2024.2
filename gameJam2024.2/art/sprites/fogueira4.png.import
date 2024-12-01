@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b5bl84ei2pjyr"
+=======
+uid="uid://bybws16i07f0f"
+>>>>>>> f6d63ec54d2e8f54a03f8269cea5c982154ce1b6
 path="res://.godot/imported/fogueira4.png-8dd9cf245bbbe029ca939aa08a739c56.ctex"
 metadata={
 "vram_texture": false

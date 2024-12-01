@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4hntpu0x0ur8"
-path="res://.godot/imported/NPC close.jpg-097c1e47f6707f94b8982004fb2ec141.ctex"
+uid="uid://dd0t5gx0qbpfb"
+path="res://.godot/imported/protagonista_closeup.png-f0ac8ba8b015e2a3a21ddfaacd581b2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sprites/NPC close.jpg"
-dest_files=["res://.godot/imported/NPC close.jpg-097c1e47f6707f94b8982004fb2ec141.ctex"]
+source_file="res://art/sprites/Protagonista/protagonista_closeup.png"
+dest_files=["res://.godot/imported/protagonista_closeup.png-f0ac8ba8b015e2a3a21ddfaacd581b2b.ctex"]
 
 [params]
 

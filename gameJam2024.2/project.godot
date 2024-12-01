@@ -26,6 +26,7 @@ directories/dch_directory={
 "Amigo": "res://dialogues/chars/Amigo.dch",
 "Cuca": "res://dialogues/chars/Cuca.dch",
 "NPC": "res://dialogues/chars/NPC.dch",
+"Nativo": "res://dialogues/chars/Nativo.dch",
 "Pai": "res://dialogues/chars/Pai.dch",
 "Protagonista": "res://dialogues/chars/Protagonista.dch",
 "cacique": "res://dialogues/chars/cacique.dch",
@@ -34,6 +35,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Inicio": "res://dialogues/timelines/Inicio.dtl",
+"boatos": "res://dialogues/timelines/boatos.dtl",
 "caverna": "res://dialogues/timelines/caverna.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
 "pos_maldicao": "res://dialogues/timelines/pos_maldicao.dtl"

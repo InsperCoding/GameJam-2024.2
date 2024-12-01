@@ -1,16 +1,109 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgd2maxn5e08c"]
+[gd_scene load_steps=15 format=3 uid="uid://bgd2maxn5e08c"]
 
-[ext_resource type="Texture2D" uid="uid://dhsuv33b4820q" path="res://art/sprites/galo.png" id="1_r1udf"]
+[ext_resource type="Texture2D" uid="uid://jpuuqoxaug02" path="res://art/sprites/Jefferson/jefferson_00.png" id="1_mygmg"]
+[ext_resource type="Texture2D" uid="uid://d2te5sllxnldg" path="res://art/sprites/Jefferson/jefferson_01.png" id="2_837bk"]
+[ext_resource type="Texture2D" uid="uid://dj8so5bxopb30" path="res://art/sprites/Jefferson/jefferson_02.png" id="3_2cyov"]
+[ext_resource type="Texture2D" uid="uid://dik7cqt0u7hxb" path="res://art/sprites/Jefferson/jefferson_06.png" id="4_xkbv7"]
+[ext_resource type="Texture2D" uid="uid://64vnf0uss8g6" path="res://art/sprites/Jefferson/jefferson_07.png" id="5_wc8on"]
+[ext_resource type="Texture2D" uid="uid://ckj6sberr6otx" path="res://art/sprites/Jefferson/jefferson_08.png" id="6_bn6gl"]
+[ext_resource type="Texture2D" uid="uid://cq7gp4nmtlc00" path="res://art/sprites/Jefferson/jefferson_03.png" id="7_cl02w"]
+[ext_resource type="Texture2D" uid="uid://cc33n3g3r0v3f" path="res://art/sprites/Jefferson/jefferson_04.png" id="8_knepl"]
+[ext_resource type="Texture2D" uid="uid://c21wog6wcww6c" path="res://art/sprites/Jefferson/jefferson_05.png" id="9_bya5q"]
+[ext_resource type="Texture2D" uid="uid://dhifk7lckjoe8" path="res://art/sprites/Jefferson/jefferson_09.png" id="10_xcyxa"]
+[ext_resource type="Texture2D" uid="uid://c2h7k28orm1qh" path="res://art/sprites/Jefferson/jefferson_10.png" id="11_fmd8v"]
+[ext_resource type="Texture2D" uid="uid://drmqf2l6ameh5" path="res://art/sprites/Jefferson/jefferson_11.png" id="12_ibyke"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuy2f"]
-size = Vector2(344, 744)
+[sub_resource type="SpriteFrames" id="SpriteFrames_s8mbr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mygmg")
+}],
+"loop": true,
+"name": &"down_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_837bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2cyov")
+}],
+"loop": true,
+"name": &"down_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xkbv7")
+}],
+"loop": true,
+"name": &"left_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wc8on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bn6gl")
+}],
+"loop": true,
+"name": &"left_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_cl02w")
+}],
+"loop": true,
+"name": &"right_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_knepl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bya5q")
+}],
+"loop": true,
+"name": &"right_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xcyxa")
+}],
+"loop": true,
+"name": &"up_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fmd8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ibyke")
+}],
+"loop": true,
+"name": &"up_walk",
+"speed": 5.0
+}]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ogjr5"]
+radius = 133.333
+height = 586.667
+
+[node name="Jefferson" type="RigidBody2D"]
 scale = Vector2(0.3, 0.3)
+gravity_scale = 0.0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_r1udf")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_s8mbr")
+animation = &"left_walk"
+frame_progress = 0.551033
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, 28)
-shape = SubResource("RectangleShape2D_yuy2f")
+shape = SubResource("CapsuleShape2D_ogjr5")

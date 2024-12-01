@@ -1,0 +1,57 @@
+label Cuca
+
+# "Minha avó me dizia que viu um jacaré andando em duas pernas uma vez."
+Nativo: Xy ára xe'ẽ ma oexa peteĩ jakare oguata mokõi ipiama peteĩ jevy.
+# "Acho que era a idade batendo."
+Nativo: A'e xe'ũ ma ixupe katu ybytéra oĩ.
+
+join Amigo right [mirrored="true"]
+Amigo: A avó dele dizia que tinha visto um jacaré andando só com as patas de trás.
+Amigo: Ele acha que era por causa da idade.
+
+join Protagonista left 
+Protagonista: Ele acha? Pois eu tenho certeza.
+leave --All-- 
+[end_timeline]
+
+label Curupira
+
+# Eu juro que vi um garoto com cabelo de fogo uma vez.
+Nativo: Axe mongetá xe'ỹ ma aexa peteĩ kunumi reve apyra tata peteĩ jevy.
+# Ele correu pro meio do mato,
+Nativo: Oe'ykuri tata amo ka'aguy rupi,
+
+# Mas quando tentei seguir ele as pegadas ficaram confusas.
+Nativo: Ha ag̃a xerova'ekue ma xeheka ixupe, ipo'i oikovy momarandu'ỹ.
+
+join Amigo right [mirrored="true"]
+Amigo: Ele disse que já viu um cara com cabelo de fogo uma vez.
+Amigo: Tentou seguir ele, mas não conseguiu alcançar.
+
+join Protagonista left 
+Protagonista: Será que era por causa de uma queimada?
+
+leave --All-- 
+[end_timeline]
+
+label Boitatá
+
+# Eu juro que é verdade!
+Nativo: Axe mongetá añetete!
+# Era uma cobra gigante!
+Nativo: Oiko peteĩ mboi guasu!
+# Feita de fogo!
+Nativo: Ypyra tata guigua!
+
+join Amigo right [mirrored="true"]
+Amigo: Ok, isso com certeza é viagem.
+
+join Protagonista left
+Protagonista: O que é?
+
+Amigo: Ele disse que viu uma cobra feita de fogo no meio da floresta.
+
+Protagonista: Entendi.
+Protagonista: Sei lá o que ele tem.
+leave --All-- 
+[end_timeline]

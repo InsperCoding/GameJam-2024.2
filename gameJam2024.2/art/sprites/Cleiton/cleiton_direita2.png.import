@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baui2sdgclke8"
-path="res://.godot/imported/NPC_placeholder.jpg-b25ecfeb5aa86c4d6fd5f7a53989250d.ctex"
+uid="uid://crs4t0bym1bau"
+path="res://.godot/imported/cleiton_direita2.png-66b176be9d8ca53a06dd78d659def617.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sprites/NPC_placeholder.jpg"
-dest_files=["res://.godot/imported/NPC_placeholder.jpg-b25ecfeb5aa86c4d6fd5f7a53989250d.ctex"]
+source_file="res://art/sprites/Cleiton/cleiton_direita2.png"
+dest_files=["res://.godot/imported/cleiton_direita2.png-66b176be9d8ca53a06dd78d659def617.ctex"]
 
 [params]
 

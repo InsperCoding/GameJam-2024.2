@@ -4,37 +4,80 @@ Protagonista: Eu estava no meu escritório, pensando na próxima aula que teria 
 Protagonista: Eu não fazia ideia...
 Protagonista: Mas aquela tarde...
 Protagonista: Seria a última desse tipo.
+[signal arg="telefone toca"]
 [sound path="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3" volume="0.0"]
 [wait time="4.0"]
+
+[end_timeline]
+
+label Conversa
+
+
+join Protagonista left
 Protagonista: Alô?
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Cara, você não faz ideia do que eu descobri!!
+leave Amigo
+join Protagonista left
 Protagonista: Boa tarde pra você também, Jefferson.
+join Amigo right [mirrored="true"]
 Amigo: Mano, tem esse cara,
 Amigo: Podre de rico!
 Amigo: Que a filha sumiu no meio do mato!
+leave Amigo
+join Protagonista left
 Protagonista: Se esse é o problema, liga pra polícia.
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Não, você não entendeu!
 Amigo: Foi numa área da Amazônia.
 Amigo: Aquela que especulam que o Curupira mora!
+leave Amigo
+join Protagonista left
 Protagonista: Cara, eu sou arqueólogo...
 Protagonista: Se você quer me contar uma lenda nem precisava me ligar.
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Você não tá me ouvindo!
 Amigo: Parece que tem uma aldeia indígena perto do local onde a menina sumiu,
 Amigo: E os habitantes sempre foram bem amigáveis com todo mundo.
 Amigo: Mas assim que ela sumiu...
 Amigo: Eles simplesmente mudaram.
+leave Amigo
+join Protagonista left
 Protagonista: Como assim?
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Eles ficaram meio depressivos.
 Amigo: Tipo do dia pra noite, tá ligado?
+leave Amigo
+join Protagonista left
 Protagonista: E...?
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: E sabe quem se especula que vive naquela mesma região, e tem fama por lançar essas mandingas?
+leave Amigo
+join Protagonista left
 Protagonista: Quem? A Mula sem Cabeça?
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Claro que não!
 Amigo: Isso seria ridículo.
 Amigo: É a Cuca!
+leave Amigo
+join Protagonista left
 Protagonista: Se eu for lá pra ver essa aldeia,
-Protagonista: Você para de encher o meu saco?
+Protagonista: Você para de me atormentar?
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Claro!
+leave Amigo
+join Protagonista left
 Protagonista: Mas você vem junto!
+leave Protagonista
+join Amigo right [mirrored="true"]
 Amigo: Tá bom, tá bom...
+leave --All--
+[end_timeline]
 # Talvez tenha que mudar umas coisas depois, mas por enquanto acho que tá bom.

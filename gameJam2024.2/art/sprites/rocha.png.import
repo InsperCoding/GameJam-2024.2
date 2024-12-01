@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b1gulrtgdfqah"
+=======
+uid="uid://nju3gutd8aq6"
+>>>>>>> f6d63ec54d2e8f54a03f8269cea5c982154ce1b6
 path="res://.godot/imported/rocha.png-bb95b4f58404b5db48b5d494f2883755.ctex"
 metadata={
 "vram_texture": false
