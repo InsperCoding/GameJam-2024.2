@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfg4k2gqv67mr"]
+[gd_scene load_steps=6 format=3 uid="uid://bfg4k2gqv67mr"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_lqial"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="2_8v60l"]
@@ -14,7 +14,11 @@ scale = Vector2(7.02182, 5.98361)
 texture = ExtResource("2_gtiyh")
 
 [node name="Amigo" parent="." instance=ExtResource("3_vo4k2")]
-position = Vector2(1248, 496)
+position = Vector2(1472, 736)
 
 [node name="player" parent="." instance=ExtResource("2_8v60l")]
-position = Vector2(560, 568)
+position = Vector2(544, 800)
+scale = Vector2(0.3, 0.3)
+
+[node name="Oca" parent="." instance=ExtResource("5_klj7d")]
+position = Vector2(952, 320)
