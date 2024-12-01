@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqyeoow5lae8y"]
 
 [ext_resource type="Script" path="res://scripts/oca_1.gd" id="1_838dt"]
-[ext_resource type="Texture2D" uid="uid://d0ad6pd7ss7wb" path="res://art/sprites/oca1.png" id="1_ujih3"]
+[ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="1_ujih3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_847e2"]
 size = Vector2(560, 448)
