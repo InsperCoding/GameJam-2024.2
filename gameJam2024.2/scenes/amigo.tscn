@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgd2maxn5e08c"]
+[gd_scene load_steps=7 format=3 uid="uid://bgd2maxn5e08c"]
 
 [ext_resource type="Texture2D" uid="uid://diujqg6ihfdmu" path="res://art/sprites/Jefferson/jefferson_00.png" id="1_7fl5b"]
+[ext_resource type="Texture2D" uid="uid://caod5y6gbfwpc" path="res://art/sprites/Jefferson/jefferson_09.png" id="2_7la2v"]
+[ext_resource type="Texture2D" uid="uid://gh6nnuqylylb" path="res://art/sprites/Jefferson/jefferson_03.png" id="3_ctvqf"]
+[ext_resource type="Texture2D" uid="uid://csgq8ddr52pcv" path="res://art/sprites/Jefferson/jefferson_06.png" id="4_bjvdf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ie1ax"]
 animations = [{
@@ -12,7 +15,26 @@ animations = [{
 "name": &"down_idle",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7la2v")
+}],
+"loop": true,
+"name": &"left_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ctvqf")
+}],
+"loop": true,
+"name": &"right_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_bjvdf")
+}],
 "loop": true,
 "name": &"up_idle",
 "speed": 5.0
