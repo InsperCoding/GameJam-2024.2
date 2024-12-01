@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://2yafl3pdmqst"]
+[gd_scene load_steps=4 format=3 uid="uid://dtpt61m2attun"]
 
 [ext_resource type="Script" path="res://scripts/Escritorio.gd" id="1_lbguu"]
 [ext_resource type="Texture2D" uid="uid://mtw02wfssmwy" path="res://art/sprites/Escritorio place-holder.png" id="2_a51lm"]

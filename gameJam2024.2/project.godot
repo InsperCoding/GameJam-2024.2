@@ -22,8 +22,24 @@ Global="*res://scripts/global.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Amigo": "res://dialogues/chars/Amigo.dch",
+"Cuca": "res://dialogues/chars/Cuca.dch",
+"NPC": "res://dialogues/chars/NPC.dch",
+"Nativo": "res://dialogues/chars/Nativo.dch",
+"Pai": "res://dialogues/chars/Pai.dch",
+"Protagonista": "res://dialogues/chars/Protagonista.dch",
+"cacique": "res://dialogues/chars/cacique.dch",
+"curupira": "res://dialogues/chars/curupira.dch",
+"menina": "res://dialogues/chars/menina.dch"
+}
+directories/dtl_directory={
+"Inicio": "res://dialogues/timelines/Inicio.dtl",
+"boatos": "res://dialogues/timelines/boatos.dtl",
+"caverna": "res://dialogues/timelines/caverna.dtl",
+"conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
+"pos_maldicao": "res://dialogues/timelines/pos_maldicao.dtl"
+}
 glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="Default"
