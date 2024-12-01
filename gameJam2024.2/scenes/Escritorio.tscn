@@ -1,8 +1,47 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtpt61m2attun"]
+[gd_scene load_steps=17 format=3 uid="uid://2yafl3pdmqst"]
 
 [ext_resource type="Script" path="res://scripts/Escritorio.gd" id="1_lbguu"]
 [ext_resource type="Texture2D" uid="uid://mtw02wfssmwy" path="res://art/sprites/Escritorio place-holder.png" id="2_a51lm"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_mu3e0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74j2c"]
+size = Vector2(152, 171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m18ec"]
+size = Vector2(152, 171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r1lw"]
+size = Vector2(152, 171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dv65i"]
+size = Vector2(128, 122.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1o8k"]
+size = Vector2(505, 339.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ju1kp"]
+size = Vector2(207.5, 54.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u13k3"]
+size = Vector2(632, 171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xnc7h"]
+size = Vector2(153, 592)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4fy2"]
+size = Vector2(1277, 94.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hiag0"]
+size = Vector2(399, 94.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4soa"]
+size = Vector2(1942, 446)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rf58s"]
+size = Vector2(136, 817.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5op7q"]
+size = Vector2(1942, 153)
 
 [node name="Escritorio" type="Node2D"]
 script = ExtResource("1_lbguu")
@@ -14,3 +53,61 @@ texture = ExtResource("2_a51lm")
 
 [node name="player" parent="." instance=ExtResource("3_mu3e0")]
 position = Vector2(625, 428)
+
+[node name="Cadeiras" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cadeiras"]
+position = Vector2(1251, 749)
+shape = SubResource("RectangleShape2D_74j2c")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cadeiras"]
+position = Vector2(1718, 895)
+shape = SubResource("RectangleShape2D_m18ec")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Cadeiras"]
+position = Vector2(551, 706.5)
+shape = SubResource("RectangleShape2D_2r1lw")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Cadeiras"]
+position = Vector2(230, 956.25)
+shape = SubResource("RectangleShape2D_dv65i")
+
+[node name="Mesas" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mesas"]
+position = Vector2(895.5, 725.75)
+shape = SubResource("RectangleShape2D_m1o8k")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Mesas"]
+position = Vector2(277.25, 461.375)
+shape = SubResource("RectangleShape2D_ju1kp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Mesas"]
+position = Vector2(1442, 426)
+shape = SubResource("RectangleShape2D_u13k3")
+
+[node name="Paredes" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(71.5, 741)
+shape = SubResource("RectangleShape2D_xnc7h")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(1298.5, 1071)
+shape = SubResource("RectangleShape2D_h4fy2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(193.5, 1071.25)
+shape = SubResource("RectangleShape2D_hiag0")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(967, 219)
+shape = SubResource("RectangleShape2D_r4soa")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(1869, 709.625)
+shape = SubResource("RectangleShape2D_rf58s")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Paredes"]
+position = Vector2(965, 1195)
+shape = SubResource("RectangleShape2D_5op7q")
