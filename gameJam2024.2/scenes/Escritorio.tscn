@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://2yafl3pdmqst"]
+
+[ext_resource type="Script" path="res://scripts/Escritorio.gd" id="1_lbguu"]
+[ext_resource type="Texture2D" uid="uid://mtw02wfssmwy" path="res://art/sprites/Escritorio place-holder.png" id="2_a51lm"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_mu3e0"]
+
+[node name="Escritorio" type="Node2D"]
+script = ExtResource("1_lbguu")
+
+[node name="EscritorioPlace-holder" type="Sprite2D" parent="."]
+position = Vector2(968.5, 557)
+scale = Vector2(1.78981, 1.38025)
+texture = ExtResource("2_a51lm")
+
+[node name="player" parent="." instance=ExtResource("3_mu3e0")]
+position = Vector2(625, 428)

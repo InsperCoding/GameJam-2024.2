@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7bfgf64g2wip"]
+
+[ext_resource type="PackedScene" path="res://Scenes/NPC_peruca.tscn" id="2_55ibr"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="3_s7c1j"]
+[ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="4_4jwab"]
+[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_ujgr0"]
+
+[node name="Oca1" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_55ibr")]
+z_index = 1
+position = Vector2(691, 328)
+
+[node name="player" parent="." instance=ExtResource("3_s7c1j")]
+z_index = 1
+position = Vector2(1021, 809)
+
+[node name="Saida" parent="." instance=ExtResource("4_ujgr0")]
+position = Vector2(1026, 972)
+
+[node name="Interioroca" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(967, 542.5)
+scale = Vector2(1.86719, 1.0498)
+texture = ExtResource("4_4jwab")

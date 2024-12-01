@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://bbplk80jib5pl"]
+
+[ext_resource type="Texture2D" uid="uid://j0ixxftt17qh" path="res://art/sprites/Vila Place_holder.png" id="1_dwta0"]
+[ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="2_bkvpl"]
+[ext_resource type="Texture2D" uid="uid://clmucpre82xit" path="res://art/sprites/oca2.png" id="3_rqxqw"]
+[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_ruyhv"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="5_7im5s"]
+[ext_resource type="Script" path="res://scripts/Portal Oca 1.gd" id="5_rfkdp"]
+[ext_resource type="Script" path="res://scripts/Portal Oca 2.gd" id="6_hnuvl"]
+[ext_resource type="Texture2D" uid="uid://be7tgu1ebn548" path="res://art/sprites/fogueira3.png" id="8_ixx8u"]
+
+[node name="Vila" type="Node2D"]
+
+[node name="VilaPlaceHolder" type="Sprite2D" parent="."]
+position = Vector2(958.5, 538.5)
+scale = Vector2(2.556, 2.54739)
+texture = ExtResource("1_dwta0")
+
+[node name="Oca1" type="Sprite2D" parent="."]
+position = Vector2(1367, 156)
+scale = Vector2(7.9375, 8.40625)
+texture = ExtResource("2_bkvpl")
+
+[node name="Oca2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1827, 541)
+scale = Vector2(7.45312, 10.7656)
+texture = ExtResource("3_rqxqw")
+
+[node name="player" parent="." instance=ExtResource("5_7im5s")]
+position = Vector2(1241, 529)
+
+[node name="Entrada Oca 1" parent="." instance=ExtResource("4_ruyhv")]
+position = Vector2(1369, 191)
+script = ExtResource("5_rfkdp")
+
+[node name="Entrada Oca 2" parent="." instance=ExtResource("4_ruyhv")]
+position = Vector2(1820, 607)
+script = ExtResource("6_hnuvl")
+
+[node name="Fogueira3" type="Sprite2D" parent="."]
+position = Vector2(915, 769.5)
+scale = Vector2(6.25, 6.65625)
+texture = ExtResource("8_ixx8u")
