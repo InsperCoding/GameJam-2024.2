@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0fotgheb67a3"]
 
 [ext_resource type="Script" path="res://scripts/Saida.gd" id="1_rqwvy"]
-[ext_resource type="Texture2D" uid="uid://onulnp1nnc4o" path="res://Art/sprites/DALL·E 2024-11-30 16.34.19 - A cozy top-down pixel art representation of a circular hut interior, styled like an old-school retro video game. The hut has clay walls, a central woo.webp" id="2_sl8ip"]
-[ext_resource type="PackedScene" uid="uid://b651e7te3enq6" path="res://Scenes/player.tscn" id="3_p5ina"]
-[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://Scenes/Portal.tscn" id="4_2oskq"]
+[ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="2_i63qu"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="3_p5ina"]
+[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="4_2oskq"]
 
 [node name="Oca2" type="Node2D"]
 script = ExtResource("1_rqwvy")
 
-[node name="Dall·e2024-11-3016_34_19-ACozyTop-downPixelArtRepresentationOfACircularHutInterior,StyledLikeAnOld-schoolRetroVideoGame_TheHutHasClayWalls,ACentralWoo" type="Sprite2D" parent="."]
-position = Vector2(974.5, 509.5)
-scale = Vector2(2.31738, 1.28809)
-texture = ExtResource("2_sl8ip")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 538.75)
+scale = Vector2(1.875, 1.05713)
+texture = ExtResource("2_i63qu")
 
 [node name="player" parent="." instance=ExtResource("3_p5ina")]
-position = Vector2(994, 799)
+position = Vector2(952, 800)
 
 [node name="Saida" parent="." instance=ExtResource("4_2oskq")]
 position = Vector2(957, 978)

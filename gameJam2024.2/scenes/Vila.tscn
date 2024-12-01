@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://j0ixxftt17qh" path="res://art/sprites/Vila Place_holder.png" id="1_dwta0"]
 [ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="2_bkvpl"]
 [ext_resource type="Texture2D" uid="uid://clmucpre82xit" path="res://art/sprites/oca2.png" id="3_rqxqw"]
-[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_ruyhv"]
-[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="5_7im5s"]
+[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://Scenes/Portal.tscn" id="4_ruyhv"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
 [ext_resource type="Script" path="res://scripts/Portal Oca 1.gd" id="5_rfkdp"]
 [ext_resource type="Script" path="res://scripts/Portal Oca 2.gd" id="6_hnuvl"]
 [ext_resource type="Texture2D" uid="uid://be7tgu1ebn548" path="res://art/sprites/fogueira3.png" id="8_ixx8u"]
@@ -28,7 +28,7 @@ scale = Vector2(7.45312, 10.7656)
 texture = ExtResource("3_rqxqw")
 
 [node name="player" parent="." instance=ExtResource("5_7im5s")]
-position = Vector2(1241, 529)
+position = Vector2(1201, 424)
 
 [node name="Entrada Oca 1" parent="." instance=ExtResource("4_ruyhv")]
 position = Vector2(1369, 191)

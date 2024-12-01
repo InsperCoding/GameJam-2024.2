@@ -8,8 +8,9 @@ Protagonista: Seria a última desse tipo.
 [sound path="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3" volume="0.0"]
 [wait time="4.0"]
 
-label Conversa
+[end_timeline]
 
+label Conversa
 
 join Protagonista left
 Protagonista: Alô?

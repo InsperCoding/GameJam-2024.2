@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfg4k2gqv67mr"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_lqial"]
-[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="2_8v60l"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="2_8v60l"]
 [ext_resource type="Texture2D" uid="uid://8xiara7u4ght" path="res://art/sprites/BG_placeholderjpg.jpg" id="2_gtiyh"]
-[ext_resource type="PackedScene" uid="uid://bgd2maxn5e08c" path="res://Scenes/amigo.tscn" id="3_vo4k2"]
+[ext_resource type="PackedScene" uid="uid://bgd2maxn5e08c" path="res://scenes/amigo.tscn" id="3_vo4k2"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_lqial")
