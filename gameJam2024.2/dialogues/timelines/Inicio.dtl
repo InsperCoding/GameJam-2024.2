@@ -1,4 +1,6 @@
 # Conversa inicial que motiva o protagonista a sair
+set {Global.player_anda} = false
+
 Protagonista: Era uma tarde comum de um fim de ano qualquer...
 Protagonista: Eu estava no meu escritório, pensando na próxima aula que teria que dar naquela tarde.
 Protagonista: Eu não fazia ideia...
@@ -7,10 +9,6 @@ Protagonista: Seria a última desse tipo.
 [signal arg="telefone toca"]
 [sound path="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3" volume="0.0"]
 [wait time="4.0"]
-
-[end_timeline]
-
-label Conversa
 
 join Protagonista left
 Protagonista: Alô?
@@ -78,5 +76,7 @@ leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Tá bom, tá bom...
 leave --All--
+
+set {Global.player_anda} = true
 [end_timeline]
 # Talvez tenha que mudar umas coisas depois, mas por enquanto acho que tá bom.

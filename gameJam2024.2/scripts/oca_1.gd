@@ -10,8 +10,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
     pass
 
-
-
 func _on_porta_body_entered(body: Node2D) -> void:
     if body.is_in_group("player"):
         if Input.is_action_just_pressed("interact"):
