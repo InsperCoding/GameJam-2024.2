@@ -306,8 +306,8 @@ tile_map_data = PackedByteArray("AAAUABEAAAAAAAoAAAAVAOn/AgAAAAAAAADu//L/AAAGAAM
 tile_set = SubResource("TileSet_vswsf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(955, 540)
-scale = Vector2(0.883333, 0.996296)
+position = Vector2(958.325, 540.13)
+scale = Vector2(0.761078, 0.881754)
 texture = ExtResource("5_eqxpf")
 
 [node name="player" parent="." instance=ExtResource("1_hny1o")]
