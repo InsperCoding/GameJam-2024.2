@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8cwtiom0ufgh"
-path="res://.godot/imported/fogueira2.png-6c4229ca06e35df8c8bf5ac4a0cb5f12.ctex"
+uid="uid://cn1n7bammxcg0"
+path="res://.godot/imported/cucacabeluda_3.png-172a7f145670f972db8f9e83f637ee13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sprites/fogueira2.png"
-dest_files=["res://.godot/imported/fogueira2.png-6c4229ca06e35df8c8bf5ac4a0cb5f12.ctex"]
+source_file="res://art/sprites/Cuca Cabiluda/cucacabeluda_3.png"
+dest_files=["res://.godot/imported/cucacabeluda_3.png-172a7f145670f972db8f9e83f637ee13.ctex"]
 
 [params]
 
