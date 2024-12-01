@@ -11,8 +11,6 @@ func _process(delta: float) -> void:
 func _on_area_2d_area_entered(body: CharacterBody2D) -> void:
     if body.is_in_group("player"):
         player_in_range = true
-        #if Input.is_action_just_pressed("interact"):
-            #get_tree().change_scene_to_file("res://scenes/Oca 2.tscn")
 
 func _on_area_2d_area_exited(body: CharacterBody2D) -> void:
     if body.is_in_group("player"):

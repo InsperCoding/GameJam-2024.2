@@ -34,6 +34,7 @@ directories/dch_directory={
 "menina": "res://dialogues/chars/menina.dch"
 }
 directories/dtl_directory={
+"Capa": "res://dialogues/timelines/Capa.dtl",
 "Inicio": "res://dialogues/timelines/Inicio.dtl",
 "boatos": "res://dialogues/timelines/boatos.dtl",
 "caverna": "res://dialogues/timelines/caverna.dtl",

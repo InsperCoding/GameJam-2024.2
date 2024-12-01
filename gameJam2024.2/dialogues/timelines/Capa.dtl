@@ -1,0 +1,12 @@
+set {Global.player_anda} = false
+
+Protagonista: Essa parece com a capa que a Cuca falou.
+
+- Deixar quieto
+	set {Global.player_anda} = true
+	[end_timeline]
+- Pegar a "Rede"
+	*Você pegou a CAPA DA CUCA*
+	set {Global.capa} = true
+	set {Global.player_anda} = true
+	[end_timeline]
