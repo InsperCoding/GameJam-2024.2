@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://b7bfgf64g2wip"]
 
-[ext_resource type="PackedScene" path="res://Scenes/NPC_peruca.tscn" id="2_55ibr"]
-[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://Scenes/player.tscn" id="3_s7c1j"]
+[ext_resource type="PackedScene" uid="uid://6svm2gayt0u2" path="res://Scenes/NPC_peruca.tscn" id="2_55ibr"]
+[ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_s7c1j"]
 [ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="4_4jwab"]
-[ext_resource type="PackedScene" path="res://Scenes/Portal.tscn" id="4_ujgr0"]
+[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://Scenes/Portal.tscn" id="4_ujgr0"]
 
 [node name="Oca1" type="Node2D"]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://6svm2gayt0u2"]
 
 [ext_resource type="Script" path="res://scripts/NPC_peruca.gd" id="1_w2eys"]
-[ext_resource type="Texture2D" uid="uid://dhsuv33b4820q" path="res://Art/sprites/galo.png" id="2_ubqwr"]
+[ext_resource type="Texture2D" uid="uid://dhsuv33b4820q" path="res://art/sprites/galo.png" id="2_ubqwr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuy2f"]
 size = Vector2(344, 744)

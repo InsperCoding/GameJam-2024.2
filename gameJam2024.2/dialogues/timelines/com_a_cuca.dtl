@@ -1,0 +1,88 @@
+label Primeiro encontro
+set {Global.player_anda} = false
+
+join Cuca (Careca) right [mirrored="true"]
+Cuca: Quem ousa invadir meu domínio?!
+
+join Protagonista left
+Protagonista: Não é possível que eu tô vendo isso!
+
+Cuca: Por que está tão surpreso?
+Cuca: Quem mais poderia ter lançado a maldição senão a grande Cuca, a bruxa da mata?!
+
+Protagonista: Calma, Você é a Cuca?
+
+Cuca: Quantos jacarés falantes que andam sobre 2 patas você conhece?
+
+Protagonista: Justo.
+Protagonista: Mas você é diferente do que eu pensei...
+Protagonista: Não era pra você ter um cabelo loiro comprido?
+
+Cuca: Eu perdi a minha peruca...
+Cuca: E outras coisas.
+
+Protagonista: Calma, é uma peruca?
+
+Cuca: A idade chaga pra todo mundo garoto.
+
+Protagonista: Foi mal.
+
+Cuca: Chega de papo!
+Cuca: Por que você veio aqui afinal?
+
+Protagonista: Eu vim desfazer a malição que assombra essa vila.
+
+Cuca: Simples assim? Sem mais nem menos?
+
+Protagonista: Vamos, deve ter alguma coisa que eu possa fazer em troca para que você retire a maldição.
+
+Cuca: Hm...
+Cuca: Normalmente eu diria que não tem a menor chance de isso acontecer.
+Cuca: Mas hoje, abro uma exceção.
+Cuca: Você precisa me trazer as coisas que roubaram de mim.
+Cuca: Faça isso e TALVEZ eu considere remover a maldição.
+
+Protagonista: Beleza! Do que precisa?
+
+Cuca: São 3 coisas\:
+Cuca: Minha capa,
+Cuca: Minha varinha,
+Cuca: E mais importante,
+Cuca: Minha peruca.
+
+Protagonista: Certo. Espera aqui que eu já volto com elas!
+leave --All--
+set {Global.player_anda} = true
+
+[end_timeline]
+
+label Achou tudo
+set {Global.player_anda} = false
+
+join Protagonista left
+
+Protagonista: Eu voltei.
+
+join Cuca (Careca) right [mirrored="true"]
+Cuca: Eu perdi a peruca, não os meus olhos.
+
+Protagonista: Eu encontrei seus pertences.
+Protagonista: Aqui estão.
+
+Cuca: Finalmente!
+leave Cuca
+join Cuca (Cabelo) right [mirrored="true"]
+
+Cuca: Agora, imagino que você queira que eu desfaça a maldição.
+
+Protagonista: É óbvio.
+
+Cuca: Certo. Desde que você saia logo da minha casa!
+
+Protagonista: Pode deixar.
+
+Cuca: Venha comigo.
+leave --All--
+
+set {Global.player_anda} = true
+[end_timeline]

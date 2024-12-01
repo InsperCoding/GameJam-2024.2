@@ -1,6 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgd2maxn5e08c"]
+[gd_scene load_steps=4 format=3 uid="uid://bgd2maxn5e08c"]
 
-[ext_resource type="Texture2D" uid="uid://dhsuv33b4820q" path="res://art/sprites/galo.png" id="1_r1udf"]
+[ext_resource type="Texture2D" uid="uid://diujqg6ihfdmu" path="res://art/sprites/Jefferson/jefferson_00.png" id="1_7fl5b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ie1ax"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7fl5b")
+}],
+"loop": true,
+"name": &"down_idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"up_idle",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuy2f"]
 size = Vector2(344, 744)
@@ -8,8 +24,9 @@ size = Vector2(344, 744)
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(0.3, 0.3)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_r1udf")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ie1ax")
+animation = &"up_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(12, 28)
