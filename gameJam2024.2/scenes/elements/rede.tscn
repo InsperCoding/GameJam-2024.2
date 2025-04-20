@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ibv0dvjf0dny"]
+
+[ext_resource type="Texture2D" uid="uid://bi2yggistn5sa" path="res://art/sprites/Itens/rede.png" id="1_vqysi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rph5l"]
+size = Vector2(533, 79.5)
+
+[node name="Rede" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vqysi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 145.75)
+shape = SubResource("RectangleShape2D_rph5l")
