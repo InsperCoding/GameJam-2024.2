@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://bw85ocg1t784i" path="res://art/sprites/tileset/tileset (2).png" id="2_6o5ph"]
 [ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="2_bkvpl"]
-[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="4_ruyhv"]
+[ext_resource type="PackedScene" path="res://scenes/Portal.tscn" id="4_ruyhv"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
 [ext_resource type="Script" path="res://scripts/Portal Oca 1.gd" id="5_rfkdp"]
 [ext_resource type="Script" path="res://scripts/Portal Oca 2.gd" id="6_hnuvl"]

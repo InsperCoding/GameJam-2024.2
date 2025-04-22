@@ -11,8 +11,8 @@ var varinha = false
 var capa = false
 
 func _process(delta: float) -> void:
-    sairdojogo()
+	sairdojogo()
 
 func sairdojogo() -> void:
-    if Input.is_action_just_pressed("exit"):
-        get_tree().quit()
+	if Input.is_action_just_pressed("exit"):
+		get_tree().quit()
