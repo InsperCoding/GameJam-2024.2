@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/Saida.gd" id="1_rqwvy"]
 [ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="2_i63qu"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_p5ina"]
-[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="4_2oskq"]
+[ext_resource type="PackedScene" path="res://scenes/Portal.tscn" id="4_2oskq"]
 [ext_resource type="PackedScene" uid="uid://6svm2gayt0u2" path="res://scenes/NPC_peruca.tscn" id="5_4ca3t"]
 
 [node name="Oca2" type="Node2D"]
