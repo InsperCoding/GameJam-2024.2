@@ -4,14 +4,15 @@ var player_in_range = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-    if player_in_range and Input.is_action_just_pressed("interact"):
-        get_tree().change_scene_to_file("res://scenes/Oca 2.tscn")
-    pass
+	if player_in_range and Input.is_action_just_pressed("interact"):
+		print("Tatu")
+		get_tree().change_scene_to_file("res://scenes/Oca 2.tscn")
+	pass
 
 func _on_area_2d_area_entered(body: CharacterBody2D) -> void:
-    if body.is_in_group("player"):
-        player_in_range = true
+	if body.is_in_group("player"):
+		player_in_range = true
 
 func _on_area_2d_area_exited(body: CharacterBody2D) -> void:
-    if body.is_in_group("player"):
-        player_in_range = false
+	if body.is_in_group("player"):
+		player_in_range = false

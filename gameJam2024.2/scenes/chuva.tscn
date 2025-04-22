@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://chvoh7e0huht2"]
+[gd_scene load_steps=11 format=3 uid="uid://byigkfr8m65fm"]
 
 [ext_resource type="Script" path="res://scripts/chuva.gd" id="1_8xfw0"]
-[ext_resource type="Texture2D" uid="uid://362ul8rdcw6t" path="res://art/sprites/chuva1.png" id="1_tmeau"]
-[ext_resource type="Texture2D" uid="uid://cfble2sy1eqm4" path="res://art/sprites/chuva2.png" id="2_tn533"]
-[ext_resource type="Texture2D" uid="uid://3hhr024qdq7k" path="res://art/sprites/chuva3.png" id="3_23j7h"]
+[ext_resource type="Texture2D" uid="uid://dcnwu8gueawsl" path="res://art/sprites/chuva1.png" id="1_tmeau"]
+[ext_resource type="Texture2D" uid="uid://cwfbxbm6y65u6" path="res://art/sprites/chuva2.png" id="2_tn533"]
+[ext_resource type="Texture2D" uid="uid://dtqkkhcn60urt" path="res://art/sprites/chuva3.png" id="3_23j7h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7v2ee"]
 texture = ExtResource("1_tmeau")
