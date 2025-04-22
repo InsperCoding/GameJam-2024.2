@@ -1122,17 +1122,17 @@ tile_map_data = PackedByteArray("AABKAB8AAgABAA4AAAA1ABwAAgABAA4AAAA1AB0AAgABAA4
 tile_set = SubResource("TileSet_l6f05")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1375, 89)
-scale = Vector2(18, 18)
+position = Vector2(1383, 91)
+scale = Vector2(9, 9)
 texture = ExtResource("2_bkvpl")
 
 [node name="Entrada Oca 1" parent="." instance=ExtResource("4_ruyhv")]
-position = Vector2(1369, 191)
+position = Vector2(1379, 199)
 script = ExtResource("5_rfkdp")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(484, 540)
-scale = Vector2(18, 18)
+scale = Vector2(9, 9)
 texture = ExtResource("7_d212r")
 
 [node name="Entrada Oca 2" parent="." instance=ExtResource("4_ruyhv")]
