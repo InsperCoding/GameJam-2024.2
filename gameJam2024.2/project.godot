@@ -12,7 +12,7 @@ config_version=5
 
 config/name="GameJam 2024.2"
 run/main_scene="res://scenes/Escritorio.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -38,6 +38,7 @@ directories/dtl_directory={
 "Inicio": "res://dialogues/timelines/Inicio.dtl",
 "boatos": "res://dialogues/timelines/boatos.dtl",
 "caverna": "res://dialogues/timelines/caverna.dtl",
+"cleiton": "res://dialogues/timelines/cleiton.dtl",
 "com_a_cuca": "res://dialogues/timelines/com_a_cuca.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
 "peruca": "res://dialogues/timelines/peruca.dtl",
