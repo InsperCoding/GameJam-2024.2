@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://2ao5lxpivxdc"]
+[gd_scene load_steps=5 format=3 uid="uid://dpv6glk2sdcqm"]
 
 [ext_resource type="Script" path="res://scripts/rede.gd" id="1_o3bog"]
 [ext_resource type="Texture2D" uid="uid://bi2yggistn5sa" path="res://art/sprites/Itens/rede.png" id="2_q4f6l"]

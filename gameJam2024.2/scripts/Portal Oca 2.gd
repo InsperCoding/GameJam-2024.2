@@ -5,7 +5,6 @@ var player_in_range = false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if player_in_range and Input.is_action_just_pressed("interact"):
-		print("Tatu")
 		get_tree().change_scene_to_file("res://scenes/Oca 2.tscn")
 	pass
 
