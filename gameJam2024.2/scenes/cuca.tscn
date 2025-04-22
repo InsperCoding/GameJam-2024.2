@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://v5xfcx7lwba2"]
+[gd_scene load_steps=13 format=3 uid="uid://v5xfcx7lwba2"]
 
 [ext_resource type="Texture2D" uid="uid://cm6f1w7vqfdnh" path="res://art/sprites/Cuca Careca/cuca_frente.png" id="1_x6wrn"]
 [ext_resource type="Texture2D" uid="uid://5qguc5ldgr28" path="res://art/sprites/Cuca Careca/cuca_frente2.png" id="2_2hmji"]
@@ -74,7 +74,10 @@ animations = [{
 radius = 112.0
 height = 528.0
 
-[node name="Cuca" type="RigidBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_em6q1"]
+
+[node name="Cuca" type="CharacterBody2D"]
+scale = Vector2(0.43, 0.43)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
@@ -83,3 +86,9 @@ animation = &"down_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_fk2ri")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(38.395, 38.395)
+shape = SubResource("CircleShape2D_em6q1")
