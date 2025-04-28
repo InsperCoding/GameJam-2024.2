@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dujky2liyyod"]
+
+[ext_resource type="Texture2D" uid="uid://c0kmeuft2f25c" path="res://art/sprites/oca1.png" id="1_8oiy0"]
+
+[node name="Oca1" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8oiy0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-28, 22, 28, 22, 24, 6, -24, 6)
