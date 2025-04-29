@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=16 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
@@ -3405,6 +3405,9 @@ texture = ExtResource("4_4goar")
 [sub_resource type="TileSet" id="TileSet_do7dh"]
 sources/0 = SubResource("TileSetAtlasSource_8sq0a")
 sources/1 = SubResource("TileSetAtlasSource_eooof")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_heygj"]
+size = Vector2(460.603, 59.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_heygj"]
 size = Vector2(460.603, 59.5)
