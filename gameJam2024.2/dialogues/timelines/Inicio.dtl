@@ -7,7 +7,7 @@ Protagonista: Já era véspera de férias, e o ar de recesso estava contagiante 
 Protagonista: Pensei que seria um dia descontraído, que terminaria em uma viagem direta ao bar.
 Protagonista: Eu não fazia ideia...
 Protagonista: ...mas aquela tarde...
-Protagonista: ...seria a última vez que teria um bocado de paz na minha vida. 
+Protagonista: ...seria a última vez que teria um bocado de paz na minha vida.
 [signal arg="telefone toca"]
 [sound path="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3" volume="0.0"]
 [wait time="4.0"]
@@ -29,7 +29,7 @@ Eu definitivamente não to sendo tapeado por criminosos dessa vez!
 Amigo: Mano, tem esse cara, o tal do Cleiton Leicester,
 Amigo: Podre de rico!
 E pelo jeito, um arqueólogo amador.
-Ele tava fazendo uma expedição amazônica, acompanhada da filha,
+Ele tava fazendo uma expedição amazônica, acompanhado da filha,
 Amigo: que simplesmente sumiu um dia!
 leave Amigo
 join Protagonista left
@@ -60,7 +60,7 @@ join Amigo right [mirrored="true"]
 Amigo: Eles ficaram meio depressivos.
 Amigo: Tipo do dia pra noite, tá ligado?
 Amigo: O Cleiton até tentou contatar eles...
-Amigo: Mas a maioria fica calada.
+Amigo: Mas a maioria fica calado.
 Amigo: Aqueles que conseguem falar, falam uma língua que nínguem entende.
 leave Amigo
 join Protagonista left
