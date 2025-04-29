@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=4 uid="uid://c828njuvp7hn4"]
+[gd_scene load_steps=7 format=4 uid="uid://c828njuvp7hn4"]
 
+[ext_resource type="Script" path="res://scenes/covilcuca.gd" id="1_8lux2"]
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="1_bllou"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="1_hny1o"]
 [ext_resource type="Texture2D" uid="uid://wb1svchyna3h" path="res://art/sprites/fundocuca.png" id="5_eqxpf"]
@@ -297,6 +298,7 @@ texture = ExtResource("1_bllou")
 sources/0 = SubResource("TileSetAtlasSource_knvar")
 
 [node name="Covilcuca" type="Node2D"]
+script = ExtResource("1_8lux2")
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 z_index = 1
