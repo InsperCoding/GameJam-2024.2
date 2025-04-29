@@ -20,7 +20,7 @@ Cuca (Careca): POR QUE VEIO AQUI, FORASTEIRO?
 Cuca (Careca): QUER RIR DA MINHA CARA FEIA?
 leave Cuca
 join Protagonista left
-Protagonista: Não! Só queria ajudar os (INSIRA NOME DA TRIBO AQUI)!
+Protagonista: Não! Só queria ajudar os Ticuna!
 leave Protagonista
 join Cuca (Careca) right
 Cuca: ...
@@ -49,7 +49,7 @@ Protagonista: (Talvez o vendaval possa ter sido do helicóptero que o Cleiton us
 leave Protagonista
 join Cuca (Careca) right
 Cuca: Enfim...
-Cuca: se achar todos os meus pertences, posso até pensar em reverter a maldição dos (INSIRA NOME DA TRIBO AQUI).
+Cuca: se achar todos os meus pertences, posso até pensar em reverter a maldição dos Ticuna.
 leave Cuca
 join Protagonista left
 Protagonista: Certo. Vou indo então.
