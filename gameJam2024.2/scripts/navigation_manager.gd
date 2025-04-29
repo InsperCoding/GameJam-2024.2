@@ -1,0 +1,27 @@
+extends Node
+
+const scene_vila = preload("res://scenes/Vila.tscn")
+const scene_oca1 = preload("res://scenes/Oca 1.tscn")
+const scene_oca2 = preload("res://scenes/Oca 2.tscn")
+
+signal on_trigger_player_spawn
+
+var spawn_door_tag
+
+func go_to_level(level_tag, destination_tag):
+	var scene_to_load
+	
+	match level_tag:
+		"Vila":
+			scene_to_load = scene_vila
+		"Oca 1":
+			scene_to_load = scene_oca1
+		"Oca 2":
+			scene_to_load = scene_oca2
+			
+	if scene_to_load != null:
+		spawn_door_tag = destination_tag
+		get_tree().change_scene_to_packed(scene_to_load)
+
+func trigger_player_spawn(position: Vector2, direction: String):
+	on_trigger_player_spawn.emit(position, direction)
