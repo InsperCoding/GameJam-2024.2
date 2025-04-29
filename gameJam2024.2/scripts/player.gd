@@ -1,6 +1,8 @@
 extends CharacterBody2D
 class_name Player
 
+class_name Player
+
 const SPEED = 300.0
 var current_dir = "none"
 var direcao = null
@@ -8,20 +10,6 @@ var inventario = []
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("down_idle")
-	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
-	
-func _on_spawn(position: Vector2, direction: String):
-	var anim = $AnimatedSprite2D
-	global_position = position
-	if direction == 'right':
-		anim.play("right_idle")
-	if direction == 'left':
-		anim.play("left_idle")
-	if direction == 'up':
-		anim.play("up_idle")
-	if direction == 'down':
-		anim.play("down_idle")
-		
 
 
 func _physics_process(delta: float) -> void:
