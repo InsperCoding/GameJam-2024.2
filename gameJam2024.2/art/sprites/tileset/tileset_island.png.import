@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmijy1dibase7"
-path="res://.godot/imported/tileset (2).png-55d09dedc024a904e5e0f4514a69b6d9.ctex"
+uid="uid://csik40yvcaqi6"
+path="res://.godot/imported/tileset_island.png-957a60b00b93938d26923d0a7aacbe7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sprites/tileset (2).png"
-dest_files=["res://.godot/imported/tileset (2).png-55d09dedc024a904e5e0f4514a69b6d9.ctex"]
+source_file="res://art/sprites/tileset/tileset_island.png"
+dest_files=["res://.godot/imported/tileset_island.png-957a60b00b93938d26923d0a7aacbe7b.ctex"]
 
 [params]
 
