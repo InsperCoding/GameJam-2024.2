@@ -41,7 +41,6 @@ leave Protagonista
 join Cuca (Careca) right
 Cuca: Enquanto estava coletando ingredientes para as minhas diversas poções, um vento fortíssimo de separou da minha varinha, da minha capa e...
 Cuca: ...minha cabeleira.
-[end_timeline]
 leave Protagonista
 join Protagonista left
 Protagonista: (Quando falou sobre a cabeleira perdida, parece que estava prestes a chorar.)
@@ -55,5 +54,6 @@ join Protagonista left
 Protagonista: Certo. Vou indo então.
 leave Protagonista
 join Cuca (Careca) right
-Cuca: Vá mesmo! 
+Cuca: Vá mesmo!
 Cuca: Se ficar mais um instante aqui, vai virar um sapo!
+[end_timeline]
