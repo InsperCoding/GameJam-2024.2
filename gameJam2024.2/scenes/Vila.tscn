@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
-[ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset (2).png" id="2_da6p1"]
+[ext_resource type="Texture2D" uid="uid://bw85ocg1t784i" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
 [ext_resource type="PackedScene" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="7_71t1k"]
