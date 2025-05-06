@@ -3,6 +3,7 @@ extends Node
 const scene_vila = preload("res://scenes/Vila.tscn")
 const scene_oca1 = preload("res://scenes/Oca 1.tscn")
 const scene_oca2 = preload("res://scenes/Oca 2.tscn")
+const scene_iara = preload("res://scenes/Cena Iara.tscn")
 
 signal on_trigger_player_spawn
 
@@ -18,6 +19,8 @@ func go_to_level(level_tag, destination_tag):
 			scene_to_load = scene_oca1
 		"Oca 2":
 			scene_to_load = scene_oca2
+		"Cena Iara":
+			scene_to_load = scene_iara
 			
 	if scene_to_load != null:
 		spawn_door_tag = destination_tag
