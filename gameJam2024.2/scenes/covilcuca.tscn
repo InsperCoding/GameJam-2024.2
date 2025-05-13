@@ -1,8 +1,22 @@
-[gd_scene load_steps=6 format=4 uid="uid://c828njuvp7hn4"]
+[gd_scene load_steps=7 format=4 uid="uid://c828njuvp7hn4"]
 
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="1_bllou"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="1_hny1o"]
 [ext_resource type="Texture2D" uid="uid://wb1svchyna3h" path="res://art/sprites/fundocuca.png" id="5_eqxpf"]
+
+[sub_resource type="GDScript" id="GDScript_5s0pq"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_knvar"]
 texture = ExtResource("1_bllou")
@@ -297,6 +311,7 @@ texture = ExtResource("1_bllou")
 sources/0 = SubResource("TileSetAtlasSource_knvar")
 
 [node name="Covilcuca" type="Node2D"]
+script = SubResource("GDScript_5s0pq")
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 z_index = 1

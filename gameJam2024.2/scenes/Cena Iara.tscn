@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=4 uid="uid://d08jc6wfkjygr"]
+[gd_scene load_steps=13 format=4 uid="uid://d08jc6wfkjygr"]
 
-[ext_resource type="Script" path="res://scenes/cena_iara.gd" id="1_r4wog"]
+[ext_resource type="Script" path="res://scripts/cena_iara.gd" id="1_r4wog"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="1_wpega"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_7uor7"]
 [ext_resource type="Texture2D" uid="uid://iddji60sroyb" path="res://art/sprites/tileset/tileset completo.png" id="3_g5cqu"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="4_puuot"]
+[ext_resource type="PackedScene" uid="uid://cged27wxxodn4" path="res://scenes/elements/iara.tscn" id="6_0cdjt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ers5x"]
 texture = ExtResource("1_wpega")
@@ -7776,9 +7777,12 @@ destination_door_tag = "Iara"
 spawn_direction = "down"
 
 [node name="CollisionShape2D" parent="Doors/Door_Iara" index="0"]
-position = Vector2(132.714, 164)
+position = Vector2(133.286, 161.857)
 
 [node name="Spawn" parent="Doors/Door_Iara" index="1"]
 position = Vector2(131.571, 132.857)
+
+[node name="Iara" parent="." instance=ExtResource("6_0cdjt")]
+position = Vector2(850, 573)
 
 [editable path="Doors/Door_Iara"]

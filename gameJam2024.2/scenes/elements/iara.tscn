@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cged27wxxodn4"]
+
+[ext_resource type="Texture2D" uid="uid://ckkllpjk5vpfp" path="res://art/sprites/Iara.png" id="1_3k8k2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oevdi"]
+size = Vector2(44, 47)
+
+[node name="Iara" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -35)
+shape = SubResource("RectangleShape2D_oevdi")
+
+[node name="Iara" type="Sprite2D" parent="."]
+position = Vector2(-4.00001, -36)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("1_3k8k2")

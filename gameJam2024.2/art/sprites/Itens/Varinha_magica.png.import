@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csik40yvcaqi6"
-path="res://.godot/imported/tileset_island.png-957a60b00b93938d26923d0a7aacbe7b.ctex"
+uid="uid://bjiajrdn7katl"
+path="res://.godot/imported/Varinha_magica.png-bc2972c950288518d69ad1a003bc62f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sprites/tileset/tileset_island.png"
-dest_files=["res://.godot/imported/tileset_island.png-957a60b00b93938d26923d0a7aacbe7b.ctex"]
+source_file="res://art/sprites/Itens/Varinha_magica.png"
+dest_files=["res://.godot/imported/Varinha_magica.png-bc2972c950288518d69ad1a003bc62f6.ctex"]
 
 [params]
 
