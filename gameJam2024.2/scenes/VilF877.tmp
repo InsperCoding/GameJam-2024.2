@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=17 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="2_bkvpl"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
 [ext_resource type="PackedScene" uid="uid://cutsx4g0ns8s0" path="res://scenes/NPC_3.tscn" id="11_expyh"]
+[ext_resource type="PackedScene" uid="uid://ctpai77wetdwu" path="res://scenes/Diario.tscn" id="12_fujln"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="13_l6kea"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
 texture = ExtResource("2_da6p1")
@@ -114,6 +116,14 @@ script = ExtResource("6_hnuvl")
 [node name="player" parent="." instance=ExtResource("5_7im5s")]
 position = Vector2(916, 556)
 
+[node name="Control" parent="player" instance=ExtResource("12_fujln")]
+visible = false
+offset_left = -916.0
+offset_top = -556.0
+offset_right = -916.0
+offset_bottom = -556.0
+script = ExtResource("13_l6kea")
+
 [node name="fronteiras" type="Node2D" parent="."]
 position = Vector2(0, 181)
 
@@ -133,21 +143,3 @@ scale = Vector2(0.4, 0.4)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("11_expyh")]
 position = Vector2(1267, 404)
-
-[node name="Diario" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="Panel" type="Panel" parent="Diario"]
-offset_left = 38.0
-offset_top = 35.0
-offset_right = 726.0
-offset_bottom = 438.0
-
-[node name="Label" type="Label" parent="Diario"]
-offset_left = 38.0
-offset_top = 35.0
-offset_right = 725.0
-offset_bottom = 137.0
-theme_override_font_sizes/font_size = 40
-text = "Palavras"
-horizontal_alignment = 1
