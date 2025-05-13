@@ -1,15 +1,16 @@
-[gd_scene load_steps=16 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=15 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
-[ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
-[ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="3_duemm"]
-[ext_resource type="Texture2D" uid="uid://iddji60sroyb" path="res://art/sprites/tileset/tileset completo.png" id="4_4goar"]
+[ext_resource type="Texture2D" uid="uid://dy7cpgn56ww3n" path="res://art/sprites/oca1.png" id="2_bkvpl"]
+[ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset (2).png" id="2_da6p1"]
+[ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="4_ruyhv"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
 [ext_resource type="PackedScene" uid="uid://dujky2liyyod" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="7_71t1k"]
 [ext_resource type="PackedScene" uid="uid://r471pcdiw2jg" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
+[ext_resource type="PackedScene" uid="uid://cutsx4g0ns8s0" path="res://scenes/NPC_3.tscn" id="11_expyh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
 texture = ExtResource("2_da6p1")
@@ -3720,101 +3721,23 @@ scale = Vector2(7, 7)
 position = Vector2(1505, 823)
 scale = Vector2(0.4, 0.4)
 
-[node name="Oca1" parent="." instance=ExtResource("6_xoros")]
-position = Vector2(469, 384)
-scale = Vector2(9, 9)
+[node name="CharacterBody2D" parent="." instance=ExtResource("11_expyh")]
+position = Vector2(1267, 404)
 
-[node name="Oca3" parent="." instance=ExtResource("8_h35qp")]
-position = Vector2(1375, 121)
-scale = Vector2(9, 9)
+[node name="Diario" type="CanvasLayer" parent="."]
+visible = false
 
-[node name="Doors" type="Node" parent="."]
+[node name="Panel" type="Panel" parent="Diario"]
+offset_left = 38.0
+offset_top = 35.0
+offset_right = 726.0
+offset_bottom = 438.0
 
-[node name="Door_Oca1" parent="Doors" instance=ExtResource("7_71t1k")]
-position = Vector2(469, 384)
-scale = Vector2(9, 9)
-destination_level_tag = "Oca 1"
-destination_door_tag = "Oca1"
-
-[node name="CollisionShape2D" parent="Doors/Door_Oca1" index="0"]
-position = Vector2(-0.222223, 14.2222)
-
-[node name="Spawn" parent="Doors/Door_Oca1" index="1"]
-position = Vector2(-0.666667, 25.5556)
-
-[node name="Door_Oca2" parent="Doors" instance=ExtResource("7_71t1k")]
-scale = Vector2(7, 7)
-destination_level_tag = "Oca 2"
-destination_door_tag = "Oca2"
-
-[node name="CollisionShape2D" parent="Doors/Door_Oca2" index="0"]
-position = Vector2(196.143, 38.8571)
-
-[node name="Spawn" parent="Doors/Door_Oca2" index="1"]
-position = Vector2(195.571, 49)
-
-[node name="Door_Iara" parent="Doors" instance=ExtResource("7_71t1k")]
-scale = Vector2(7, 7)
-destination_level_tag = "Cena Iara"
-destination_door_tag = "Iara"
-
-[node name="CollisionShape2D" parent="Doors/Door_Iara" index="0"]
-position = Vector2(112.857, 1.28571)
-
-[node name="Spawn" parent="Doors/Door_Iara" index="1"]
-position = Vector2(117.857, 16.7143)
-
-[node name="Door_Curupira" parent="Doors" instance=ExtResource("7_71t1k")]
-position = Vector2(-7, 5)
-scale = Vector2(8, 8)
-destination_level_tag = "covilcurupira"
-destination_door_tag = "Curupira"
-spawn_direction = "down"
-
-[node name="CollisionShape2D" parent="Doors/Door_Curupira" index="0"]
-position = Vector2(81.125, 140.75)
-
-[node name="Spawn" parent="Doors/Door_Curupira" index="1"]
-position = Vector2(77.625, 121.375)
-
-[node name="Door_Cuca" parent="Doors" instance=ExtResource("7_71t1k")]
-position = Vector2(-2, -9)
-scale = Vector2(8, 8)
-destination_level_tag = "covilcuca"
-destination_door_tag = "Cuca"
-
-[node name="CollisionShape2D" parent="Doors/Door_Cuca" index="0"]
-position = Vector2(-6.875, 112.25)
-
-[node name="Spawn" parent="Doors/Door_Cuca" index="1"]
-position = Vector2(14, 112.625)
-
-[node name="Door_Labirinto" parent="Doors" instance=ExtResource("7_71t1k")]
-scale = Vector2(7, 7)
-destination_level_tag = "cena_labirinto"
-destination_door_tag = "Vila"
-spawn_direction = "left"
-
-[node name="CollisionShape2D" parent="Doors/Door_Labirinto" index="0"]
-position = Vector2(280.429, 86.7143)
-
-[node name="Spawn" parent="Doors/Door_Labirinto" index="1"]
-position = Vector2(259.857, 87.1429)
-
-[editable path="Doors/Door_Oca1"]
-[editable path="Doors/Door_Oca2"]
-[editable path="Doors/Door_Iara"]
-[editable path="Doors/Door_Curupira"]
-[editable path="Doors/Door_Cuca"]
-[editable path="Doors/Door_Labirinto"]
-[node name="RigidBody2D" parent="." instance=ExtResource("11_3hu3j")]
-position = Vector2(1618, 865)
-
-[node name="TransicaoCovil" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TransicaoCovil"]
-position = Vector2(884.31, 1250.25)
-scale = Vector2(4.28, 1)
-shape = SubResource("RectangleShape2D_heygj")
-
-[connection signal="body_entered" from="TransicaoCovil" to="." method="_on_transicao_covil_body_entered"]
+[node name="Label" type="Label" parent="Diario"]
+offset_left = 38.0
+offset_top = 35.0
+offset_right = 725.0
+offset_bottom = 137.0
+theme_override_font_sizes/font_size = 40
+text = "Palavras"
+horizontal_alignment = 1
