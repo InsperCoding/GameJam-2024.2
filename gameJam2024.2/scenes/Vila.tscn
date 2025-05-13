@@ -151,3 +151,25 @@ offset_bottom = 137.0
 theme_override_font_sizes/font_size = 40
 text = "Palavras"
 horizontal_alignment = 1
+
+[node name="Eae" type="Label" parent="Diario"]
+offset_left = 171.0
+offset_top = 136.0
+offset_right = 232.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 30
+text = "chocolate"
+
+[node name="OptionButton" type="OptionButton" parent="Diario"]
+offset_left = 440.0
+offset_top = 135.0
+offset_right = 591.0
+offset_bottom = 188.0
+item_count = 3
+popup/item_0/text = "Cuca"
+popup/item_1/text = "Curupira"
+popup/item_1/id = 1
+popup/item_2/text = "Covil"
+popup/item_2/id = 2
+
+[connection signal="item_selected" from="Diario/OptionButton" to="player" method="_on_option_button_item_selected"]
