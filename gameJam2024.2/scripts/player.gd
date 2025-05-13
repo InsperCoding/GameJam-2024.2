@@ -83,3 +83,7 @@ func player_anim(mov_constant):
 			anim.play("down_walk")
 		else:
 			anim.play("down_idle")
+
+
+func _on_option_button_item_selected(index: int) -> void:
+	Dialogic.VAR.homem1_1 = $"../Diario/OptionButton".get_item_text($"../Diario/OptionButton".get_selected_id())

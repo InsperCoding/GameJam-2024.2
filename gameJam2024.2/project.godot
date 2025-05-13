@@ -51,7 +51,9 @@ directories/dtl_directory={
 glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="Default"
-variables={}
+variables={
+"homem1_1": "chocolate"
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
