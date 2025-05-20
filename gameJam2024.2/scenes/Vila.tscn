@@ -3708,6 +3708,7 @@ position = Vector2(916, 556)
 collision_layer = 9
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+limit_top = -200
 
 [node name="Fogueira" parent="." instance=ExtResource("9_dcm3n")]
 position = Vector2(1236, 603)
@@ -3781,7 +3782,7 @@ destination_level_tag = "covilcuca"
 destination_door_tag = "Cuca"
 
 [node name="CollisionShape2D" parent="Doors/Door_Cuca" index="0"]
-position = Vector2(-6.875, 112.25)
+position = Vector2(-5.625, 112.625)
 
 [node name="Spawn" parent="Doors/Door_Cuca" index="1"]
 position = Vector2(14, 112.625)
