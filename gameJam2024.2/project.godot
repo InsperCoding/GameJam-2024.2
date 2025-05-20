@@ -32,6 +32,7 @@ directories/dch_directory={
 "Protagonista": "res://dialogues/chars/Protagonista.dch",
 "cacique": "res://dialogues/chars/cacique.dch",
 "curupira": "res://dialogues/chars/curupira.dch",
+"iracema": "res://dialogues/chars/iracema.dch",
 "menina": "res://dialogues/chars/menina.dch"
 }
 directories/dtl_directory={
@@ -41,6 +42,7 @@ directories/dtl_directory={
 "caverna": "res://dialogues/timelines/caverna.dtl",
 "cleiton": "res://dialogues/timelines/cleiton.dtl",
 "com_a_cuca": "res://dialogues/timelines/com_a_cuca.dtl",
+"conversa_cabeleira": "res://dialogues/timelines/conversa_cabeleira.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
 "conversa_homem1": "res://dialogues/timelines/conversa_homem1.dtl",
 "peruca": "res://dialogues/timelines/peruca.dtl",
