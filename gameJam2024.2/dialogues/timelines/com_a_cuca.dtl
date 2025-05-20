@@ -1,89 +1,59 @@
 label Primeiro encontro
 set {Global.player_anda} = false
 set {Global.viu_a_cuca} = true
-
-join Cuca (Careca) right [mirrored="true"]
-Cuca: Quem ousa invadir meu domínio?!
-
 join Protagonista left
-Protagonista: Não é possível que eu tô vendo isso!
-
-Cuca: Por que está tão surpreso?
-Cuca: Quem mais poderia ter lançado a maldição senão a grande Cuca, a bruxa da mata?!
-
-Protagonista: Calma, Você é a Cuca?
-
-Cuca: Quantos jacarés falantes que andam sobre 2 patas você conhece?
-
-Protagonista: Justo.
-Protagonista: Mas você é diferente do que eu pensei...
-Protagonista: Não era pra você ter um cabelo loiro comprido?
-
-Cuca: Eu perdi a minha peruca...
-Cuca: E outras coisas.
-
-Protagonista: Calma, é uma peruca?
-
-Cuca: A idade chaga pra todo mundo garoto.
-
-Protagonista: Foi mal.
-
-Cuca: Chega de papo!
-Cuca: Por que você veio aqui afinal?
-
-Protagonista: Eu vim desfazer a malição que assombra essa vila.
-
-Cuca: Simples assim? Sem mais nem menos?
-
-Protagonista: Vamos, deve ter alguma coisa que eu possa fazer em troca para que você retire a maldição.
-
-Cuca: Hm...
-Cuca: Normalmente eu diria que não tem a menor chance de isso acontecer.
-Cuca: Mas hoje, abro uma exceção.
-Cuca: Você precisa me trazer as coisas que roubaram de mim.
-Cuca: Faça isso e TALVEZ eu considere remover a maldição.
-
-Protagonista: Beleza! Do que precisa?
-
-Cuca: São 3 coisas\:
-Cuca: Minha capa,
-Cuca: Minha varinha,
-Cuca: E mais importante,
-Cuca: Minha peruca.
-
-Protagonista: Certo. Espera aqui que eu já volto com elas!
-leave --All--
-set {Global.player_anda} = true
-
-[end_timeline]
-
-label Achou tudo
-set {Global.player_anda} = false
-
-join Protagonista left
-
-Protagonista: Eu voltei.
-
-join Cuca (Careca) right [mirrored="true"]
-Cuca: Eu perdi a peruca, não os meus olhos.
-
-Protagonista: Eu encontrei seus pertences.
-Protagonista: Aqui estão.
-
-Cuca: Finalmente!
+Protagonista: (Quando pude ver a causa das pegadas na caverna, sentir o meu sangue gelar. Tinha um jacaré vivendo aqui.)
+Protagonista: (Um jacaré bípede...)
+Protagonista: (...dentro de uma cova cheia de poções e um caldeirão posto ao fogo.)
+Protagonista: (Pera...)
+Protagonista: (Não seria...)
+leave Protagonista
+join Cuca (Careca) right
+Cuca (Careca): Ah! Um visitante.
+Cuca (Careca): NÃO SABE QUE ESSE É UM MOMENTO SENSÍVEL PARA MIM?!
 leave Cuca
-join Cuca (Cabelo) right [mirrored="true"]
-
-Cuca: Agora, imagino que você queira que eu desfaça a maldição.
-
-Protagonista: É óbvio.
-
-Cuca: Certo. Desde que você saia logo da minha casa!
-
-Protagonista: Pode deixar.
-
-Cuca: Venha comigo.
-leave --All--
-
-set {Global.player_anda} = true
+join Protagonista left
+Protagonista: Espera! Eu vim em paz!
+leave Protagonista
+join Cuca (Careca) right
+Cuca (Careca): POR QUE VEIO AQUI, FORASTEIRO?
+Cuca (Careca): QUER RIR DA MINHA CARA FEIA?
+leave Cuca
+join Protagonista left
+Protagonista: Não! Só queria ajudar os Ticuna!
+leave Protagonista
+join Cuca (Careca) right
+Cuca: ...
+Cuca: Agora entendo.
+Cuca: Quer achar aquela menina do homem assassino, certo?
+leave Cuca
+join Protagonista left
+Protagonista: Bom...
+Protagonista: ...é uma maneira de se dizer, mas sim.
+leave Protagonista
+join Cuca (Careca) right
+Cuca: Sinto que até posso reverter a maldição que invoquei...
+Cuca: ...mas exijo algo em troca.
+leave Cuca
+join Protagonista left
+Protagonista: Como assim?
+leave Protagonista
+join Cuca (Careca) right
+Cuca: Enquanto estava coletando ingredientes para as minhas diversas poções, um vento fortíssimo de separou da minha varinha, da minha capa e...
+Cuca: ...minha cabeleira.
+leave Protagonista
+join Protagonista left
+Protagonista: (Quando falou sobre a cabeleira perdida, parece que estava prestes a chorar.)
+Protagonista: (Talvez o vendaval possa ter sido do helicóptero que o Cleiton usa...)
+leave Protagonista
+join Cuca (Careca) right
+Cuca: Enfim...
+Cuca: se achar todos os meus pertences, posso até pensar em reverter a maldição dos Ticuna.
+leave Cuca
+join Protagonista left
+Protagonista: Certo. Vou indo então.
+leave Protagonista
+join Cuca (Careca) right
+Cuca: Vá mesmo!
+Cuca: Se ficar mais um instante aqui, vai virar um sapo!
 [end_timeline]

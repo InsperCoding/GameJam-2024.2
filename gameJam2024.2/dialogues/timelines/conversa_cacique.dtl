@@ -1,99 +1,179 @@
 label aldeia
-	
-	# Saudações, sábio líder.
-	Amigo: Apyka, karai teko.
-	
-	cacique: Se acharem mais agradável, podemos conversar na sua lingua.
-	
-	Protagonista: Você fala português?
-	
-	Amigo: Por que não falou antes?
-	
-	cacique: Vocês não perguntaram.
-	
-	Protagonista: Senhor cacique, viemos aqui em busca de uma garota que desapareceu nessa região.
-	
-	cacique: Sim, eu vi quem a levou.
-	
-	Protagonista: Espera, VOCÊ VIU?
-	
-	cacique: Em uma visão, sim.
-	
-	Amigo: Então por que o senhor não fez nada?
-	
-	cacique: Eu já sou velho, não consiguiria impedir.
-	cacique: E mesmo que mandassemos nossos mais bravos guerreiros, apenas iríamos deixá-lo mais irritado.
-	
-	Protagonista: Como assim?
-	
-	cacique: Quando tive a visão eu pude ver mais do que o que estava acontecendo no local. 
-	cacique: Eu vi a aura dele.
-	cacique: E ela queimava...
-	cacique: Com ódio, e vingança
-	
-	Protagonista: De quem você tá falando?
-	
-	cacique: Daquele que protege as matas,
-	cacique: Daquele que engana aqueles que buscam o seu mau.
-	cacique: E cujo fogo que eu vi naquela visão,
-	cacique: Só se compara com aquele que queima na sua cabeleira.
-	
-	Amigo: O Curupira?
-	
-	cacique: Se é assim que vocês o chamam, então sim.
-	
-	Protagonista: Espera um pouco.
-	Protagonista: O CURUPIRA.
-	Protagonista: EXISTE?!
-	
-	Amigo: A gente acabou de livrar uma aldeia de uma maldição lançada pela Cuca
-	Amigo: E você se surpreende com o Curupira?
-	
-	Protagonista: Justo.
-	
-	Amigo: Senhor Cacique.
-	Amigo: Você pode nos mostrar onde a menina foi levada?
-	Amigo: Talvez ainda possámos achar alguma pista sobre onde ela foi levada.
-	
-	cacique: Certamente.
-	cacique: É o mínimo que posso fazer como retribuição por terem nos salvado dessa maldição terrível.
-	
-	Protagonista: Então vamos logo!
-	Protagonista: O tempo tá correndo.
-	[end_timeline]
+
+# Saudações, sábio líder.
+join Amigo left
+Amigo: Apyka, karai teko.
+leave Amigo
+join cacique center
+cacique: Muito compreesnsível da sua parte...
+
+cacique: ...mas se acharem mais agradável, podemos conversar na sua lingua.
+leave cacique
+join Protagonista right
+
+Protagonista: Você fala português?
+leave Protagonista
+join Amigo left
+
+Amigo: Por que não falou antes?
+leave Amigo
+join cacique center
+
+cacique: Vocês não perguntaram.
+cacique: Bem estranho assumir que só porque sou indígena, não saiba português.
+leave cacique
+join Protagonista left
+
+Protagonista: Senhor cacique, viemos aqui em busca de uma garota que desapareceu nessa região.
+leave Protagonista
+join cacique center
+cacique: Está se referindo a filha daquele homem que corrompe todas as terras que toca...
+
+cacique: Sim, eu vi quem a levou.
+leave cacique
+join Protagonista left
+
+Protagonista: Espera, VOCÊ VIU?
+leave Protagonista
+join cacique center
+
+cacique: Em uma visão, sim.
+leave cacique
+join Amigo right
+
+Amigo: Então por que o senhor não fez nada?
+leave Amigo
+join cacique center
+cacique: Já se foi a era que podia prover proteção física a minha tribo.
+
+cacique: Eu já sou velho, não consiguiria impedir.
+cacique: E mesmo que mandassemos nossos mais bravos guerreiros, apenas iríamos deixá-lo mais irritado.
+leave cacique
+join Protagonista left
+
+Protagonista: Como assim?
+join cacique center
+
+cacique: Quando tive a visão eu pude ver mais do que o que estava acontecendo no local.
+cacique: Eu vi a aura dele.
+cacique: E essa queimava...
+cacique: Com ódio, e vingança
+leave cacique
+join Protagonista left
+
+Protagonista: De quem você tá falando?
+leave Protagonista
+join cacique center
+
+cacique: Daquele que protege as matas,
+cacique: Daquele que engana aqueles que buscam o seu mau.
+cacique: E cujo fogo que eu vi naquela visão,
+cacique: Só se compara com aquele que queima na sua cabeleira.
+leave cacique
+join Amigo right
+
+Amigo: O Curupira?
+leave Amigo
+join cacique center
+
+cacique: Se é assim que vocês o chamam, então sim.
+leave cacique
+join Protagonista left
+
+Protagonista: Só ta de brincadeira comigo.
+Protagonista: O CURUPIRA.
+Protagonista: TAMBÉM TÁ ENVOLVIDO NISSO!?
+Protagonista: SE ERA PRA TER ESSE CONGLOMERADO DE CONTO DE FADAS,
+Protagonista: EU IRIA PRO JARDIM DE INFÂNCIA!
+leave Protagonista
+join Amigo right
+Amigo: Calma Jonas!
+
+Amigo: Eu também to querendo ir pra casa, e não to reclamando!
+leave Amigo
+join Amigo left
+Protagonista: ...
+Amigo: (Não acredito que o Jefferson foi o mais sentando entre nós...)
+
+Protagonista: ...justo...
+leave Protagonista
+join Amigo right
+
+Amigo: Senhor Cacique.
+Amigo: Você pode nos mostrar onde a menina foi levada?
+Amigo: Talvez ainda possámos achar alguma pista sobre onde ela foi levada.
+leave Amigo
+join cacique center
+
+cacique: Certamente.
+cacique: É o mínimo que posso fazer como retribuição por terem nos salvado dessa maldição terrível.
+leave cacique
+join Protagonista center
+
+Protagonista: Então vamos logo!
+Protagonista: O tempo tá correndo.
+Protagonista: (Tempo pra tomar uma bem forte, isso sim...)
+leave Protagonista
+[end_timeline]
 
 label cena_do_crime
-	
-	cacique: Aqui estamos.
-	
-	Protagonista: Tem certeza que é aqui?
-	
-	cacique: Minhas visões nunca erram.
-	
-	Amigo: Nesse caso é melhor procurarmos.
-	
-	Protagonista: Certo.
-	
-label roupa
-	Protagonista: Olha!
-	Protagonista: Tem alguma coisa aqui!
-	
-	Amigo: Parece um pedaço de tecido.
-	
-	cacique: Ela estava usando uma roupa dessa cor quando foi levada. 
-	
-	Amigo: Tem mais pedaços por ali!
-	
-	Protagonista: Parece que ela deixou um rastro!
-	
-	Amigo: Garota esperta.
-	
-	Protagonista: Vamos seguir ele!
-	
-	Amigo: Mas o que a gente faz quando acharmos o Curupira?
-	Amigo: Quer dizer, você ouviu o cacique.
-	Amigo: Ele não tava afim de papo.
-	
-	Protagonista: A gente pensa nisso quando chegar lá.
-	[end_timeline]
+join cacique center
 
+cacique: Aqui estamos.
+leave cacique
+join Protagonista left
+
+Protagonista: Tem certeza que é aqui?
+leave Protagonista
+join cacique center
+
+cacique: Minhas visões nunca erram.
+leave cacique
+join Amigo right
+
+Amigo: Nesse caso é melhor procurarmos.
+leave Amigo
+join Protagonista left
+
+Protagonista: Certo.
+leave Protagonista
+
+label roupa
+join Protagonista left
+Protagonista: Olha!
+Protagonista: Tem alguma coisa aqui!
+leave Protagonista
+join Amigo right
+
+Amigo: Parece um pedaço de tecido.
+leave Amigo
+join cacique center
+
+cacique: Ela estava usando uma roupa dessa cor quando foi levada.
+leave cacique
+join Amigo right
+
+Amigo: Tem mais pedaços por ali!
+leave Amigo
+join Protagonista left
+
+Protagonista: Parece que ela deixou um rastro!
+leave Protagonista
+join Amigo right
+
+Amigo: Garota esperta.
+leave Amigo
+join Protagonista left
+
+Protagonista: Vamos seguir ele!
+leave Protagonista
+join Amigo right
+
+Amigo: Mas o que a gente faz quando acharmos o Curupira?
+Amigo: Quer dizer, você ouviu o cacique.
+Amigo: Ele não tava afim de papo.
+leave Amigo
+join Protagonista left
+
+Protagonista: A gente pensa nisso quando chegar lá.
+[end_timeline]

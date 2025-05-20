@@ -1,0 +1,38 @@
+join Protagonista left
+Protagonista: (Espere um pouco...)
+Protagonista: (Ninguém na aldeia tem cabelo loiro...)
+Protagonista: (A não ser que esteja usando uma cabeleira que tenha achado em algum lugar...)
+Protagonista: Com licença.
+Protagonista: Como conseguiu esse cabelo loiro?
+leave Protagonista
+join iracema center
+iracema: !?
+iracema: Que tipo de pergunta é essa?
+iracema: Eu... nasci com esse belo cabelo!
+leave iracema
+join Protagonista left
+Protagonista: (Mentindo na cara dura)
+Pode me explicar essas raízes negras que tem?
+leave Protagonista
+join iracema center
+iracema: Bom...
+iracema: Sabe...
+iracema: Lavei MUITO bem meu cabelo e...
+iracema: ...
+iracema: É, me pegou no flagra.
+iracema: Achei isso no meio do mato.
+iracema: E é tão bela...
+leave iracema
+join Protagonista left
+Protagonista: Melhor você entregar isso pra mim.
+Protagonista: Isso pertence a Cuca.
+Protagonista: Ou você quer extender essa maldição nessa vila?
+leave Protagonista
+join iracema center
+iracema: Não me fala mais nada.
+iracema: Se isso for da Cuca, tira isso de mim!
+leave iracema
+join Protagonista left
+Protagonista: ...ok então...
+Protagonista: (Não esperava que isso acontecesse tão rápido)
+[end_timeline]
