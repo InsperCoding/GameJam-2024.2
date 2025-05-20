@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cutsx4g0ns8s0"]
+[gd_scene load_steps=5 format=3 uid="uid://bnvuaggonixrw"]
 
 [ext_resource type="Script" path="res://scripts/homem.gd" id="1_vva2p"]
 [ext_resource type="Texture2D" uid="uid://d14mf3t5ghxlc" path="res://art/sprites/Nativos/homem.png" id="2_f0jkl"]
