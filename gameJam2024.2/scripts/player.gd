@@ -1,6 +1,8 @@
 extends CharacterBody2D
 class_name Player
 
+class_name Player
+
 const SPEED = 300.0
 var current_dir = "none"
 var direcao = null

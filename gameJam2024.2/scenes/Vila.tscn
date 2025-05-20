@@ -3685,6 +3685,9 @@ texture = ExtResource("4_4goar")
 sources/0 = SubResource("TileSetAtlasSource_8sq0a")
 sources/1 = SubResource("TileSetAtlasSource_eooof")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_heygj"]
+size = Vector2(460.603, 59.5)
+
 [node name="Vila" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_n7iu0")
@@ -3710,6 +3713,12 @@ collision_layer = 9
 [node name="Fogueira" parent="." instance=ExtResource("9_dcm3n")]
 position = Vector2(1236, 603)
 scale = Vector2(7, 7)
+[node name="Camera2D" type="Camera2D" parent="player"]
+position_smoothing_speed = 8.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(1377, 592)
+scale = Vector2(6.25, 6.65625)
 
 [node name="Rede" parent="." instance=ExtResource("10_b5d2t")]
 position = Vector2(1505, 823)
@@ -3789,3 +3798,14 @@ position = Vector2(14, 112.625)
 [editable path="Doors/Door_Iara"]
 [editable path="Doors/Door_Curupira"]
 [editable path="Doors/Door_Cuca"]
+[node name="RigidBody2D" parent="." instance=ExtResource("11_3hu3j")]
+position = Vector2(1618, 865)
+
+[node name="TransicaoCovil" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TransicaoCovil"]
+position = Vector2(884.31, 1250.25)
+scale = Vector2(4.28, 1)
+shape = SubResource("RectangleShape2D_heygj")
+
+[connection signal="body_entered" from="TransicaoCovil" to="." method="_on_transicao_covil_body_entered"]
