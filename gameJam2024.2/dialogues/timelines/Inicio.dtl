@@ -3,9 +3,11 @@ set {Global.player_anda} = false
 
 Protagonista: Era uma tarde comum de um fim de ano qualquer...
 Protagonista: Eu estava no meu escritório, pensando na próxima aula que teria que dar naquela tarde.
+Protagonista: Já era véspera de férias, e o ar de recesso estava contagiante em todo o campus.
+Protagonista: Pensei que seria um dia descontraído, que terminaria em uma viagem direta ao bar.
 Protagonista: Eu não fazia ideia...
-Protagonista: Mas aquela tarde...
-Protagonista: Seria a última desse tipo.
+Protagonista: ...mas aquela tarde...
+Protagonista: ...seria a última vez que teria um bocado de paz na minha vida.
 [signal arg="telefone toca"]
 [sound path="res://art/sounds/Rotary phone ringtone Sound effects [TubeRipper.com].mp3" volume="0.0"]
 [wait time="4.0"]
@@ -18,22 +20,31 @@ Amigo: Cara, você não faz ideia do que eu descobri!!
 leave Amigo
 join Protagonista left
 Protagonista: Boa tarde pra você também, Jefferson.
+Protagonista: Sinceramente, não to muito entusiasmado com essa descoberta.
+Protagonista: Eu certamente não me esqueci do que aconteceu no Sudão...
+leave Protagonista
 join Amigo right [mirrored="true"]
-Amigo: Mano, tem esse cara,
+Amigo: Relaxa, Jonas, para de teimosia!
+Eu definitivamente não to sendo tapeado por criminosos dessa vez!
+Amigo: Mano, tem esse cara, o tal do Cleiton Leicester,
 Amigo: Podre de rico!
-Amigo: Que a filha sumiu no meio do mato!
+E pelo jeito, um arqueólogo amador.
+Ele tava fazendo uma expedição amazônica, acompanhado da filha,
+Amigo: que simplesmente sumiu um dia!
 leave Amigo
 join Protagonista left
 Protagonista: Se esse é o problema, liga pra polícia.
 leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Não, você não entendeu!
-Amigo: Foi numa área da Amazônia.
+Amigo: Foi numa área extremamente isolada.
 Amigo: Aquela que especulam que o Curupira mora!
 leave Amigo
 join Protagonista left
-Protagonista: Cara, eu sou arqueólogo...
+Protagonista: Cara, eu sou arqueólogo profissional...
 Protagonista: Se você quer me contar uma lenda nem precisava me ligar.
+Protagonista: Deveria ter dito isso pro Robson.
+Aquele criptozoólogo safado...
 leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Você não tá me ouvindo!
@@ -48,6 +59,9 @@ leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Eles ficaram meio depressivos.
 Amigo: Tipo do dia pra noite, tá ligado?
+Amigo: O Cleiton até tentou contatar eles...
+Amigo: Mas a maioria fica calado.
+Amigo: Aqueles que conseguem falar, falam uma língua que nínguem entende.
 leave Amigo
 join Protagonista left
 Protagonista: E...?
@@ -61,11 +75,17 @@ leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Claro que não!
 Amigo: Isso seria ridículo.
+leave Amigo
+join Protagonista left
+Protagonista: (Como se ficar discutindo folclore durante o trabalho não fosse ridículo o suficiente...)
+leave Protagonista
+join Amigo right
 Amigo: É a Cuca!
 leave Amigo
 join Protagonista left
 Protagonista: Se eu for lá pra ver essa aldeia,
-Protagonista: Você para de me atormentar?
+Protagonista: você para de me atormentar?
+Protagonista: Essa conversa ta me deixando com vontade de beber uns 5 chopps...
 leave Protagonista
 join Amigo right [mirrored="true"]
 Amigo: Claro!
