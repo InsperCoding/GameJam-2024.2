@@ -11,7 +11,17 @@ func _ready() -> void:
 	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
 	
 func _on_spawn(position: Vector2, direction: String):
+	var anim = $AnimatedSprite2D
 	global_position = position
+	if direction == 'right':
+		anim.play("right_idle")
+	if direction == 'left':
+		anim.play("left_idle")
+	if direction == 'up':
+		anim.play("up_idle")
+	if direction == 'down':
+		anim.play("down_idle")
+		
 
 
 func _physics_process(delta: float) -> void:

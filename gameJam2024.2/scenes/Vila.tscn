@@ -3707,6 +3707,8 @@ polygon = PackedVector2Array(5, 57, 1917, 68, 1920, 1088, 4, 1092, 0, -31, -124,
 position = Vector2(916, 556)
 collision_layer = 9
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+
 [node name="Fogueira" parent="." instance=ExtResource("9_dcm3n")]
 position = Vector2(1236, 603)
 scale = Vector2(7, 7)
@@ -3784,8 +3786,21 @@ position = Vector2(-6.875, 112.25)
 [node name="Spawn" parent="Doors/Door_Cuca" index="1"]
 position = Vector2(14, 112.625)
 
+[node name="Door_Labirinto" parent="Doors" instance=ExtResource("7_71t1k")]
+scale = Vector2(7, 7)
+destination_level_tag = "cena_labirinto"
+destination_door_tag = "Vila"
+spawn_direction = "left"
+
+[node name="CollisionShape2D" parent="Doors/Door_Labirinto" index="0"]
+position = Vector2(280.429, 86.7143)
+
+[node name="Spawn" parent="Doors/Door_Labirinto" index="1"]
+position = Vector2(259.857, 87.1429)
+
 [editable path="Doors/Door_Oca1"]
 [editable path="Doors/Door_Oca2"]
 [editable path="Doors/Door_Iara"]
 [editable path="Doors/Door_Curupira"]
 [editable path="Doors/Door_Cuca"]
+[editable path="Doors/Door_Labirinto"]
