@@ -29,6 +29,10 @@ func _on_spawn(position: Vector2, direction: String):
 func _physics_process(delta: float) -> void:
 	if Global.player_anda:
 		player_movement(delta)
+		
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("open_diary"):
+		$"../Diario".visible = !$"../Diario".visible
 
 func player_movement(delta):
 	if Input.is_action_pressed("right"):
@@ -93,3 +97,7 @@ func player_anim(mov_constant):
 			anim.play("down_walk")
 		else:
 			anim.play("down_idle")
+
+
+func _on_option_button_item_selected(index: int) -> void:
+	Dialogic.VAR.homem1_1 = $"../Diario/OptionButton".get_item_text($"../Diario/OptionButton".get_selected_id())
