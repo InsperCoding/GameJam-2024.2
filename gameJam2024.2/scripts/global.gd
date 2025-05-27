@@ -10,7 +10,7 @@ var peruca = false
 var varinha = false
 var capa = false
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	sairdojogo()
 
 func sairdojogo() -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=18 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
@@ -3685,6 +3685,14 @@ texture = ExtResource("4_4goar")
 sources/0 = SubResource("TileSetAtlasSource_8sq0a")
 sources/1 = SubResource("TileSetAtlasSource_eooof")
 
+[sub_resource type="Gradient" id="Gradient_joe34"]
+offsets = PackedFloat32Array(0, 0.428571)
+colors = PackedColorArray(0, 0, 0, 0.745098, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_y15ns"]
+gradient = SubResource("Gradient_joe34")
+fill_to = Vector2(0, 1)
+
 [node name="Vila" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_n7iu0")
@@ -3802,6 +3810,13 @@ position = Vector2(280.429, 86.7143)
 
 [node name="Spawn" parent="Doors/Door_Labirinto" index="1"]
 position = Vector2(259.857, 87.1429)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 205.0
+offset_top = 571.0
+offset_right = 725.0
+offset_bottom = 635.0
+texture = SubResource("GradientTexture2D_y15ns")
 
 [editable path="Doors/Door_Oca1"]
 [editable path="Doors/Door_Oca2"]

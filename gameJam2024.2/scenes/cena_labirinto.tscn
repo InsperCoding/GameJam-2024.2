@@ -6720,6 +6720,7 @@ position = Vector2(-5, 26.7143)
 position = Vector2(16.4286, 28)
 
 [node name="player" parent="." instance=ExtResource("6_3ris7")]
+modulate = Color(0.392157, 0.431373, 0.588235, 1)
 position = Vector2(249, 200)
 
 [node name="AnimatedSprite2D" parent="player" index="0"]

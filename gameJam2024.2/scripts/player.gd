@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	if Global.player_anda:
 		player_movement(delta)
 
-func player_movement(delta):
+func player_movement(_delta):
 	if Input.is_action_pressed("right"):
 		current_dir = "right"
 		direcao = Vector2(1, 0)
