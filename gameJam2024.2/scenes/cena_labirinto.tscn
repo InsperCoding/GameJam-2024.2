@@ -6657,22 +6657,21 @@ shader = ExtResource("7_lus3y")
 shader_parameter/smoothness = 0.6
 shader_parameter/opacity = 1.0
 
-[sub_resource type="Gradient" id="Gradient_6c4bh"]
-offsets = PackedFloat32Array(0, 0.75974)
-colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_xqofw"]
-gradient = SubResource("Gradient_6c4bh")
-fill = 1
-fill_from = Vector2(0.509174, 0.518349)
-
 [sub_resource type="Gradient" id="Gradient_3t0aa"]
-colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 0)
+offsets = PackedFloat32Array(0, 0.577922, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0.705882, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_sgyhc"]
 gradient = SubResource("Gradient_3t0aa")
-fill_from = Vector2(0, 0.16055)
+fill_from = Vector2(0.0137615, 0)
 fill_to = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="Gradient_dgmy6"]
+offsets = PackedFloat32Array(0, 0.564935, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0.709804, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7psnb"]
+gradient = SubResource("Gradient_dgmy6")
 
 [node name="CenaLabirinto" type="Node2D"]
 y_sort_enabled = true
@@ -6738,6 +6737,9 @@ polygon = PackedVector2Array(1756.44, -760.889, 1752.89, -394.667, 2055.11, -394
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(2087.11, -632.889, 4039.11, -632.889, 3968, -753.778, 2229.33, -728.889)
 
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1735.11, -711.111, -935.111, -707.556, -935.111, 526.222, -1130.67, -842.667)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
@@ -6748,20 +6750,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
-z_index = -1
-offset_left = -1651.0
-offset_top = -902.0
-offset_right = 4379.0
-offset_bottom = 3071.0
-texture = SubResource("GradientTexture2D_xqofw")
-
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = -5.0
-offset_top = -9.0
+offset_top = -62.0
 offset_right = 747.0
 offset_bottom = 55.0
 texture = SubResource("GradientTexture2D_sgyhc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -2587.0
+offset_top = -1213.0
+offset_right = 5780.0
+offset_bottom = 3596.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -39.0
+offset_right = 93.0
+offset_bottom = 370.0
+texture = SubResource("GradientTexture2D_7psnb")
 
 [editable path="Doors/Door_Vila"]
 [editable path="player"]
