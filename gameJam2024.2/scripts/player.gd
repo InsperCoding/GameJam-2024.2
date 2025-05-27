@@ -9,6 +9,7 @@ var inventario = []
 func _ready() -> void:
 	$AnimatedSprite2D.play("down_idle")
 	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	add_to_group("jogadores")
 	
 func _on_spawn(position: Vector2, direction: String):
 	global_position = position
