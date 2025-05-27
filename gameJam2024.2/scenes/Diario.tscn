@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 831587f31880e46b395354aee11bafb2b165992c
 [gd_scene format=3 uid="uid://dlv6ui3yysfav"]
 
 [node name="Control" type="Control"]
 z_index = 10
 z_as_relative = false
+<<<<<<< HEAD
 =======
 [gd_scene format=3 uid="uid://ctpai77wetdwu"]
 
@@ -17,6 +21,8 @@ z_as_relative = false
 z_index = 10
 z_as_relative = false
 >>>>>>> 5abe164 (fix: diario aparecendo)
+=======
+>>>>>>> 831587f31880e46b395354aee11bafb2b165992c
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,13 +34,19 @@ grow_vertical = 2
 layout_mode = 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5abe164 (fix: diario aparecendo)
+=======
+>>>>>>> 831587f31880e46b395354aee11bafb2b165992c
 offset_left = 70.0
 offset_top = 47.0
 offset_right = 781.0
 offset_bottom = 431.0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 831587f31880e46b395354aee11bafb2b165992c
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
@@ -67,6 +79,7 @@ popup/item_1/text = "Curupira"
 popup/item_1/id = 1
 popup/item_2/text = "covil"
 popup/item_2/id = 2
+<<<<<<< HEAD
 =======
 offset_right = 696.0
 offset_bottom = 727.0
@@ -108,3 +121,5 @@ popup/item_1/id = 1
 popup/item_2/text = "covil"
 popup/item_2/id = 2
 >>>>>>> 5abe164 (fix: diario aparecendo)
+=======
+>>>>>>> 831587f31880e46b395354aee11bafb2b165992c
