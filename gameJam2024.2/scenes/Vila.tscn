@@ -3686,7 +3686,7 @@ sources/0 = SubResource("TileSetAtlasSource_8sq0a")
 sources/1 = SubResource("TileSetAtlasSource_eooof")
 
 [sub_resource type="Gradient" id="Gradient_joe34"]
-offsets = PackedFloat32Array(0, 0.428571)
+offsets = PackedFloat32Array(0, 0.474026)
 colors = PackedColorArray(0, 0, 0, 0.745098, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_y15ns"]
@@ -3812,10 +3812,17 @@ position = Vector2(280.429, 86.7143)
 position = Vector2(259.857, 87.1429)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 205.0
-offset_top = 571.0
-offset_right = 725.0
-offset_bottom = 635.0
+offset_left = 215.0
+offset_top = 580.0
+offset_right = 721.0
+offset_bottom = 644.0
+texture = SubResource("GradientTexture2D_y15ns")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 1122.0
+offset_top = 318.0
+offset_right = 1628.0
+offset_bottom = 382.0
 texture = SubResource("GradientTexture2D_y15ns")
 
 [editable path="Doors/Door_Oca1"]
