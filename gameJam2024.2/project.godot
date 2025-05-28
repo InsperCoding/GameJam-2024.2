@@ -12,7 +12,7 @@ config_version=5
 
 config/name="GameJam 2024.2"
 run/main_scene="res://scenes/Escritorio.tscn"
-config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -159,6 +159,7 @@ open_diary={
 [layer_names]
 
 2d_physics/layer_4="triggers"
+">>>>>>>831587f31880e46b395354aee11bafb2b165992c[rendering]textures/canvas_textures/default_texture_filter"=0
 
 [rendering]
 
