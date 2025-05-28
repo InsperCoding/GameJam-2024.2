@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://v5xfcx7lwba2" path="res://scenes/cuca.tscn" id="4_hmjkm"]
 [ext_resource type="Texture2D" uid="uid://225rp27kfsuq" path="res://art/sprites/caldeirao.png" id="5_ci6j0"]
 [ext_resource type="Texture2D" uid="uid://wb1svchyna3h" path="res://art/sprites/fundocuca.png" id="5_eqxpf"]
+[ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="6_mx3k0"]
 
 [sub_resource type="GDScript" id="GDScript_5s0pq"]
 script/source = "extends Node2D
@@ -326,13 +327,15 @@ tile_map_data = PackedByteArray("AAAUABEAAAABAAkAAAAVAOn/AgAAAAAAAADu//L/AAAGAAM
 tile_set = SubResource("TileSet_vswsf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(958.325, 540.13)
+position = Vector2(965, 589)
 scale = Vector2(0.761078, 0.881754)
 texture = ExtResource("5_eqxpf")
 
 [node name="player" parent="." instance=ExtResource("1_hny1o")]
 z_index = 1
 position = Vector2(625, 428)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="Cuca" parent="." instance=ExtResource("4_hmjkm")]
 z_index = 1
@@ -353,3 +356,19 @@ z_index = 1
 position = Vector2(147.601, 234.244)
 scale = Vector2(1.495, 1.495)
 shape = SubResource("CircleShape2D_7ord5")
+
+[node name="Doors" type="Node" parent="."]
+
+[node name="Door_Vila" parent="Doors" instance=ExtResource("6_mx3k0")]
+scale = Vector2(7, 7)
+destination_level_tag = "Vila"
+destination_door_tag = "Cuca"
+spawn_direction = "down"
+
+[node name="CollisionShape2D" parent="Doors/Door_Vila" index="0"]
+position = Vector2(90.2857, 30.2857)
+
+[node name="Spawn" parent="Doors/Door_Vila" index="1"]
+position = Vector2(90.7143, 41.7143)
+
+[editable path="Doors/Door_Vila"]

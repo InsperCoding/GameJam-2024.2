@@ -7749,6 +7749,7 @@ texture = ExtResource("3_g5cqu")
 sources/0 = SubResource("TileSetAtlasSource_c1l3d")
 
 [node name="CenaIara" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_r4wog")
 
 [node name="TileMap_normal" type="TileMapLayer" parent="."]
@@ -7784,5 +7785,10 @@ position = Vector2(131.571, 132.857)
 
 [node name="Iara" parent="." instance=ExtResource("6_0cdjt")]
 position = Vector2(850, 573)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1, 544, 91, 577, 222, 531, 389, 584, 553, 604, 686, 620, 767, 635, 845, 632, 938, 592, 1031, 572, 1072, 572, 1140, 572, 1190, 569, 1243, 529, 1326, 524, 1354, 524, 1382, 536, 1404, 572, 1450, 539, 1480, 511, 1518, 509, 1583, 509, 1659, 491, 1744, 476, 1802, 453, 1891, 448, 1923, 444, 1917, 1079, -1, 1085, 34, 399, -52, 1129, 2040, 1097, 1919, 310)
 
 [editable path="Doors/Door_Iara"]

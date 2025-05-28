@@ -6,6 +6,7 @@ const scene_oca2 = preload("res://scenes/Oca 2.tscn")
 const scene_iara = preload("res://scenes/Cena Iara.tscn")
 const scene_curupira = preload("res://scenes/covilcurupira.tscn")
 const scene_cuca = preload("res://scenes/covilcuca.tscn")
+const scene_labirinto = preload("res://scenes/cena_labirinto.tscn")
 
 signal on_trigger_player_spawn
 
@@ -27,6 +28,8 @@ func go_to_level(level_tag, destination_tag):
 			scene_to_load = scene_curupira
 		"covilcuca":
 			scene_to_load = scene_cuca
+		"cena_labirinto":
+			scene_to_load = scene_labirinto
 			
 	if scene_to_load != null:
 		spawn_door_tag = destination_tag
