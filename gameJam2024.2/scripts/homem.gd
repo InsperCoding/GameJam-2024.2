@@ -13,7 +13,7 @@ func interacao() -> void:
 		for palavra in get_meta("novas_palavras"):
 			print(palavra)
 			Dialogic.VAR.set_variable(palavra, palavra)
-			var label = $"../Diario".get_children()[0].get_children()[Global.num_palavras_novas]
+			var label = $"../player/Diario".get_children()[0].get_children()[Global.num_palavras_novas]
 			label.show()
 			label.text = palavra
 			
