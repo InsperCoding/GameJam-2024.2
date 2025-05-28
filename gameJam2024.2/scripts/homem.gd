@@ -6,12 +6,9 @@ var ja_interagiu = false
 func interacao() -> void:
 	if !ja_interagiu:
 		ja_interagiu = true
-		# FALTA AQUI:
-		# Habilitar label baseada no numero aprendido, colocando texto adequando
 		Global.num_palavras_novas += 1
 		
 		for palavra in get_meta("novas_palavras"):
-			print(palavra)
 			Dialogic.VAR.set_variable(palavra, palavra)
 			var label = $"../player/Diario".get_children()[0].get_children()[Global.num_palavras_novas]
 			label.show()
