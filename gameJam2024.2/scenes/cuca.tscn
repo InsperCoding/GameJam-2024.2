@@ -74,7 +74,8 @@ animations = [{
 radius = 112.0
 height = 528.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_em6q1"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5olx"]
+size = Vector2(344.186, 595.349)
 
 [node name="Cuca" type="CharacterBody2D"]
 scale = Vector2(0.43, 0.43)
@@ -90,5 +91,6 @@ shape = SubResource("CapsuleShape2D_fk2ri")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(38.395, 38.395)
-shape = SubResource("CircleShape2D_em6q1")
+position = Vector2(-6.97674, 4.65115)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_l5olx")

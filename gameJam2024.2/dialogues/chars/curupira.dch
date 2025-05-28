@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "closeup",
 "description": "Sequestrou a menina",
 "display_name": "curupira",
 "mirror": false,
 "nicknames": ["Curupira"],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"closeup": {
+"export_overrides": {
+"image": "\"res://art/sprites/Curupira/curupira_closeup.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

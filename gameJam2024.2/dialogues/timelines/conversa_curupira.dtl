@@ -1,0 +1,40 @@
+join Protagonista left
+Protagonista: (Depois de tanto tempo, finalmente encontro Isabela, a garota que causou toda essa aventura.)
+Protagonista: (Ela está amarrada nas mãos e pés, e possui uma venda na boca, mas, tirando a sujeira na roupa, ela possui poucos sinais de machucados.)
+Protagonista: (Quando ela me percebe, seus olhos quase que saltavam das órbitas dela, e estavam tão molhados que parecia que iria inundar a caverna inteira)
+Protagonista: (Foi só depois que percebi quem estava ao lado dela... era o Curupira.)
+Protagonista: (A figura que vejo a minha frente bate com a descrição popular...)
+Protagonista: (... um homem de pequeno porte, com cabelo vermelho como o fogo, e com o calcanhar para a minha frente.)
+Protagonista: (Seu rosto indica que ele estava esperando por mim – uma expressão que mistura tédio e ódio).
+leave Protagonista
+join curupira right
+curupira: Mais um forasteiro...
+curupira: ... mas sinto que você quer algo de mim...
+leave curupira
+join Protagonista left
+Protagonista: A tribo disse que você está com a filha de Leicester.
+leave Protagonista
+join curupira right
+curupira: E estão corretos.
+curupira: Tive que dar uma mensagem bem... “clara” para aquele homem que a natureza não é um brinquedo que se joga fora.
+leave curupira
+join Protagonista left
+Protagonista: Não acha que sequestrar uma menina indefesa estaria forçando a barra?
+leave Protagonista
+join curupira right
+curupira: Se alguém entrasse na sua oca sem ser convidado, comesse sua comida, sujasse seu chão, e matasse sua família, você iria ser razoável com essa pessoa?
+leave curupira
+join Protagonista left
+Protagonista: ...
+leave Protagonista
+join curupira right
+curupira: Foi o que pensei.
+curupira: Se você quer mesmo bancar o herói, a garotinha está livre...
+curupira: ... se aquele homem assassino prometer que não ceifará uma vida sequer dessas terras.
+curupira: Que a floresta o trate da mesma maneira que a tratou.
+leave curupira
+join Protagonista left
+Protagonista: (Mesmo sendo uma conversa curta, pude ver como essas criaturas operam.)
+Protagonista: (Eles prezam seu lar como se fosse seus últimos dias neles.)
+Protagonista: (Não os culpo por serem tão zelosos...)
+Protagonista: (... e fazerem o necessário para punir qualquer um que os ameasse)
