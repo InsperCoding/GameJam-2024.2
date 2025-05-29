@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=17 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://r471pcdiw2jg" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
-[ext_resource type="PackedScene" uid="uid://dlv6ui3yysfav" path="res://scenes/Diario.tscn" id="11_1usv4"]
 [ext_resource type="PackedScene" uid="uid://bnvuaggonixrw" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
@@ -3429,15 +3428,6 @@ polygon = PackedVector2Array(5, 57, 1917, 68, 1920, 1088, 4, 1092, 0, -31, -124,
 position = Vector2(916, 556)
 collision_layer = 9
 
-[node name="Camera2D" type="Camera2D" parent="player"]
-
-[node name="Diario" parent="player" instance=ExtResource("11_1usv4")]
-visible = false
-offset_left = -916.0
-offset_top = -556.0
-offset_right = -916.0
-offset_bottom = -556.0
-
 [node name="Fogueira" parent="." instance=ExtResource("9_dcm3n")]
 position = Vector2(1236, 603)
 scale = Vector2(7, 7)
@@ -3515,10 +3505,15 @@ position = Vector2(-6.875, 112.25)
 [node name="Spawn" parent="Doors/Door_Cuca" index="1"]
 position = Vector2(14, 112.625)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("12_fwurf")]
+[node name="Homem1" parent="." instance=ExtResource("12_fwurf")]
 position = Vector2(1477, 499)
 metadata/dialogo = "conversa_homem1"
-metadata/novas_palavras = ["banana"]
+metadata/novas_palavras = ["AOO", "OOO"]
+
+[node name="Homem2" parent="." instance=ExtResource("12_fwurf")]
+position = Vector2(221, 979)
+metadata/dialogo = "conversa_homem2"
+metadata/novas_palavras = ["XUU", "RAA"]
 
 [editable path="Doors/Door_Oca1"]
 [editable path="Doors/Door_Oca2"]

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="GameJam 2024.2"
 run/main_scene="res://scenes/Escritorio.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -32,6 +32,7 @@ directories/dch_directory={
 "Protagonista": "res://dialogues/chars/Protagonista.dch",
 "cacique": "res://dialogues/chars/cacique.dch",
 "curupira": "res://dialogues/chars/curupira.dch",
+"iara": "res://dialogues/chars/iara.dch",
 "iracema": "res://dialogues/chars/iracema.dch",
 "menina": "res://dialogues/chars/menina.dch"
 }
@@ -44,7 +45,16 @@ directories/dtl_directory={
 "com_a_cuca": "res://dialogues/timelines/com_a_cuca.dtl",
 "conversa_cabeleira": "res://dialogues/timelines/conversa_cabeleira.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
+"conversa_curupira": "res://dialogues/timelines/conversa_curupira.dtl",
 "conversa_homem1": "res://dialogues/timelines/conversa_homem1.dtl",
+"conversa_homem2": "res://dialogues/timelines/conversa_homem2.dtl",
+"conversa_iara": "res://dialogues/timelines/conversa_iara.dtl",
+"jefferson1": "res://dialogues/timelines/jefferson1.dtl",
+"jefferson2": "res://dialogues/timelines/jefferson2.dtl",
+"jefferson3": "res://dialogues/timelines/jefferson3.dtl",
+"jefferson4": "res://dialogues/timelines/jefferson4.dtl",
+"jefferson5": "res://dialogues/timelines/jefferson5.dtl",
+"jefferson6": "res://dialogues/timelines/jefferson6.dtl",
 "peruca": "res://dialogues/timelines/peruca.dtl",
 "pos_maldicao": "res://dialogues/timelines/pos_maldicao.dtl"
 }
@@ -52,9 +62,13 @@ glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="Default"
 variables={
-"O": "",
-"banana": "",
-"uiuiui": ""
+"AOO": "",
+"BOO": "",
+"OAO": "",
+"OOO": "",
+"RAA": "",
+"UOA": "",
+"XUU": ""
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
