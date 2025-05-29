@@ -12,6 +12,8 @@ var capa = false
 
 # Variaveis relacionadas ao diario
 var num_palavras_novas = 0
+var palavras_ouvidas = []
+var traducoes_selecionadas = []
 
 func _process(delta: float) -> void:
 	sairdojogo()
