@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx4l2ulkxdo1b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbf5a"]
+
+[node name="MulaMulher" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("Idle")
+
+[node name="Idle" type="AnimatedSprite2D" parent="AnimationPlayer"]
+sprite_frames = SubResource("SpriteFrames_kbf5a")
