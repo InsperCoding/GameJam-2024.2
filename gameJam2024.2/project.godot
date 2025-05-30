@@ -44,6 +44,7 @@ directories/dtl_directory={
 "com_a_cuca": "res://dialogues/timelines/com_a_cuca.dtl",
 "conversa_cabeleira": "res://dialogues/timelines/conversa_cabeleira.dtl",
 "conversa_cacique": "res://dialogues/timelines/conversa_cacique.dtl",
+"conversa_curupira": "res://dialogues/timelines/conversa_curupira.dtl",
 "conversa_homem1": "res://dialogues/timelines/conversa_homem1.dtl",
 "peruca": "res://dialogues/timelines/peruca.dtl",
 "pos_maldicao": "res://dialogues/timelines/pos_maldicao.dtl"
