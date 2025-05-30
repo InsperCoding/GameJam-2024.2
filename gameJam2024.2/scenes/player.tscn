@@ -110,8 +110,6 @@ animation = &"up_walk"
 position = Vector2(5.5, 63)
 shape = SubResource("RectangleShape2D_uoe6w")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Diario" parent="." instance=ExtResource("14_1tkw0")]
 visible = false
 offset_left = -977.0

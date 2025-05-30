@@ -1,17 +1,17 @@
-[gd_scene load_steps=21 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=22 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="3_duemm"]
 [ext_resource type="Texture2D" uid="uid://iddji60sroyb" path="res://art/sprites/tileset/tileset completo.png" id="4_4goar"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
-[ext_resource type="PackedScene" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
+[ext_resource type="PackedScene" uid="uid://dujky2liyyod" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="7_71t1k"]
-[ext_resource type="PackedScene" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
+[ext_resource type="PackedScene" uid="uid://r471pcdiw2jg" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
-[ext_resource type="PackedScene" uid="uid://bnvuaggonixrw" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
 [ext_resource type="Script" path="res://scenes/daynightcycle.gd" id="11_uouy2"]
+[ext_resource type="PackedScene" uid="uid://bnvuaggonixrw" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
 texture = ExtResource("2_da6p1")
@@ -3444,6 +3444,8 @@ polygon = PackedVector2Array(5, 57, 1917, 68, 1920, 1088, 4, 1092, 0, -31, -124,
 [node name="player" parent="." instance=ExtResource("5_7im5s")]
 position = Vector2(916, 556)
 collision_layer = 9
+
+[node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="Fogueira" parent="." instance=ExtResource("9_dcm3n")]
 position = Vector2(1236, 603)

@@ -8,20 +8,20 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "iara",
+"default_portrait": "Iara",
 "description": "",
-"display_name": "iara",
+"display_name": "Iara",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"iara": {
+"Iara": {
 "export_overrides": {
 "image": "\"res://art/sprites/Iara/definitivamente_a_iara.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 0.4,
 "scene": ""
 }
 },

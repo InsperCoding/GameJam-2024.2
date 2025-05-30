@@ -312,7 +312,7 @@ tile_set = SubResource("TileSet_0ifc7")
 [node name="player" parent="." instance=ExtResource("3_pel32")]
 position = Vector2(1861, 1444)
 
-[node name="Camera2D" type="Camera2D" parent="player"]
+[node name="Camera2D2" type="Camera2D" parent="player"]
 position = Vector2(7, 16)
 limit_left = 0
 limit_top = 0
