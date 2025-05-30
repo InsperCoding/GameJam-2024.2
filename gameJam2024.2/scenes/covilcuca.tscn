@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c828njuvp7hn4"]
+[gd_scene load_steps=11 format=4 uid="uid://c828njuvp7hn4"]
 
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="1_bllou"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="1_hny1o"]
@@ -335,7 +335,7 @@ texture = ExtResource("5_eqxpf")
 z_index = 1
 position = Vector2(625, 428)
 
-[node name="Camera2D" type="Camera2D" parent="player"]
+[node name="Camera2D2" type="Camera2D" parent="player"]
 
 [node name="Cuca" parent="." instance=ExtResource("4_hmjkm")]
 z_index = 1
