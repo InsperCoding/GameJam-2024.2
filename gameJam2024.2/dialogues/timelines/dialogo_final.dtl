@@ -1,0 +1,59 @@
+join Pai right
+Pai: Cadê a minha filha?
+leave Pai
+join Protagonista left
+Protagonista: Tá comigo. Fique calmo...
+leave Protagonista
+join Pai right
+Pai: Entrega ela AGORA!
+leave Pai
+join Protagonista left
+Protagonista: Só vou entregar ela se prometer que irá deixar a fauna e flora em paz.
+leave Protagonista
+join Pai right
+Pai: Tá de brincadeira comigo.
+Pai: Depois de tudo que fizeram por minha filha...
+Pai: ...por que devo seguir essa regra de merda?
+Pai: Devo salgar a terra desses seres do inferno!
+Pai: A começar por esse ruivo...
+leave Pai
+# Cleito tenta atirar no curupira, mas o Jefferson dá uma pedrada na cabeça dele. Ele morre na hora.
+join menina right
+menina: Pai?
+leave menina
+join Amigo right
+Amigo: Ah não...
+leave Amigo
+join menina right
+menina: Papai!
+leave menina
+# A menina chora perto do corpo do pai. De repente, a Cuca aparece. Seu diálogo carrega uma certa pitada de ironia.
+join  center
+join Cuca (Cabelo) right
+Cuca: Ah, coitadinha... ter que lidar com a perda de seu pai por uma maneira tão estúpida assim...
+leave Cuca
+join menina right
+menina: Por favor, traz o papai de volta!
+leave menina
+# A Cuca pondera nessa proposta... e dá a sua proposta. 
+join Cuca (Cabelo) right
+Cuca: Só dessa vez, irei conceder misercórida, mas eu devo avisar...
+Cuca: Se seu papaizinho dessacrar a natureza de novo, quem pagará pelo erro dele será a sua vida.
+leave Cuca
+# Isabela fica surpresa e hesita por um bom tempo...
+join menina right
+menina: Tudo bem Cuca...
+leave menina
+# Um feitiço curto depois...
+join Cuca (Cabelo) right
+Cuca: Tudo pronto.
+Cuca: Só deve aguardar alguns momentos até ele se recuperar totalmente.
+Cuca: Até nunca mais...
+# E assim, a Cuca desaparece...
+join Amigo right
+Amigo: Graças a Deus isso acabou rápido.
+Amigo: Vamos sair daqui.
+leave Amigo
+join Protagonista left
+Protagonista: Música pros meus ouvidos...
+[end_timeline]

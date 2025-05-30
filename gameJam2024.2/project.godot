@@ -50,6 +50,8 @@ directories/dtl_directory={
 "conversa_homem1": "res://dialogues/timelines/conversa_homem1.dtl",
 "conversa_homem2": "res://dialogues/timelines/conversa_homem2.dtl",
 "conversa_iara": "res://dialogues/timelines/conversa_iara.dtl",
+"dialogo_final": "res://dialogues/timelines/dialogo_final.dtl",
+"dica_mula": "res://dialogues/timelines/dica_mula.dtl",
 "jefferson1": "res://dialogues/timelines/jefferson1.dtl",
 "jefferson2": "res://dialogues/timelines/jefferson2.dtl",
 "jefferson3": "res://dialogues/timelines/jefferson3.dtl",
