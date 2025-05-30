@@ -1,11 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://cx4l2ulkxdo1b"]
+[gd_scene load_steps=4 format=3 uid="uid://cx4l2ulkxdo1b"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_kbf5a"]
+[ext_resource type="Script" path="res://scenes/mula_mulher.gd" id="1_8mreh"]
+[ext_resource type="Texture2D" uid="uid://bwrtp20eku5g0" path="res://art/sprites/Mula sem Cabeca/Idle/mulher_spritesheet.png" id="2_xpuca"]
 
-[node name="MulaMulher" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fooi6"]
+size = Vector2(48.25, 133.5)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("Idle")
+[node name="MulaMulher" type="Node2D" groups=["npcs"]]
+script = ExtResource("1_8mreh")
 
-[node name="Idle" type="AnimatedSprite2D" parent="AnimationPlayer"]
-sprite_frames = SubResource("SpriteFrames_kbf5a")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_xpuca")
+region_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 9)
+shape = SubResource("RectangleShape2D_fooi6")
