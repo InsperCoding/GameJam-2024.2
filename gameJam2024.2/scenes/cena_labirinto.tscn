@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dkg86cjdkncft"]
+[gd_scene load_steps=20 format=4 uid="uid://dkg86cjdkncft"]
 
 [ext_resource type="Script" path="res://scenes/cena_labirinto.gd" id="1_0agvo"]
 [ext_resource type="Texture2D" uid="uid://bjiajrdn7katl" path="res://art/sprites/Itens/Varinha_magica.png" id="1_66fvb"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="4_k5ll0"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="6_3ris7"]
 [ext_resource type="Shader" path="res://scenes/cena_labirinto.gdshader" id="7_lus3y"]
+[ext_resource type="PackedScene" uid="uid://boxq2e38ib24o" path="res://scenes/MulaCavalo.tscn" id="8_wqf33"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3up15"]
 texture = ExtResource("2_f0bce")
@@ -6771,6 +6772,10 @@ offset_left = -39.0
 offset_right = 93.0
 offset_bottom = 370.0
 texture = SubResource("GradientTexture2D_7psnb")
+
+[node name="MulaCavalo" parent="." instance=ExtResource("8_wqf33")]
+position = Vector2(738, 150)
+scale = Vector2(0.45, 0.45)
 
 [editable path="Doors/Door_Vila"]
 [editable path="player"]
