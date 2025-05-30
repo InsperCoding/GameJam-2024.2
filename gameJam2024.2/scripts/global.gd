@@ -13,7 +13,7 @@ var capa = false
 # Variaveis relacionadas ao diario
 var num_palavras_novas = 0
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	sairdojogo()
 
 func sairdojogo() -> void:

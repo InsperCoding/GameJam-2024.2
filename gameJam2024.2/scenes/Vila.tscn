@@ -1,17 +1,18 @@
-[gd_scene load_steps=18 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=21 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="3_duemm"]
 [ext_resource type="Texture2D" uid="uid://iddji60sroyb" path="res://art/sprites/tileset/tileset completo.png" id="4_4goar"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="5_7im5s"]
-[ext_resource type="PackedScene" uid="uid://dujky2liyyod" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
+[ext_resource type="PackedScene" path="res://scenes/elements/oca_1.tscn" id="6_xoros"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="7_71t1k"]
-[ext_resource type="PackedScene" uid="uid://r471pcdiw2jg" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
+[ext_resource type="PackedScene" path="res://scenes/elements/oca_3.tscn" id="8_h35qp"]
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
 [ext_resource type="PackedScene" uid="uid://dlv6ui3yysfav" path="res://scenes/Diario.tscn" id="11_1usv4"]
 [ext_resource type="PackedScene" uid="uid://bnvuaggonixrw" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
+[ext_resource type="Script" path="res://scenes/daynightcycle.gd" id="11_uouy2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
 texture = ExtResource("2_da6p1")
@@ -3407,6 +3408,22 @@ texture = ExtResource("4_4goar")
 sources/0 = SubResource("TileSetAtlasSource_8sq0a")
 sources/1 = SubResource("TileSetAtlasSource_eooof")
 
+[sub_resource type="Gradient" id="Gradient_joe34"]
+offsets = PackedFloat32Array(0, 0.474026)
+colors = PackedColorArray(0, 0, 0, 0.745098, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_y15ns"]
+gradient = SubResource("Gradient_joe34")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="Gradient_2cb8a"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.201479, 0.345656, 0.532348, 0.63586, 0.74122, 1)
+colors = PackedColorArray(0.168627, 0.266667, 0.490196, 1, 0.168627, 0.266667, 0.490196, 1, 0.19395, 0.434233, 0.557909, 1, 0.977752, 0.640012, 0.651261, 1, 0.687075, 0.687075, 0.687075, 1, 0.789116, 0.789116, 0.789116, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vrlff"]
+gradient = SubResource("Gradient_2cb8a")
+
 [node name="Vila" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_n7iu0")
@@ -3519,6 +3536,25 @@ position = Vector2(14, 112.625)
 position = Vector2(1477, 499)
 metadata/dialogo = "conversa_homem1"
 metadata/novas_palavras = ["banana"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 215.0
+offset_top = 580.0
+offset_right = 721.0
+offset_bottom = 644.0
+texture = SubResource("GradientTexture2D_y15ns")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 1122.0
+offset_top = 318.0
+offset_right = 1628.0
+offset_bottom = 382.0
+texture = SubResource("GradientTexture2D_y15ns")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.392157, 0.431373, 0.588235, 1)
+script = ExtResource("11_uouy2")
+gradient = SubResource("GradientTexture1D_vrlff")
 
 [editable path="Doors/Door_Oca1"]
 [editable path="Doors/Door_Oca2"]
