@@ -1,9 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://2yafl3pdmqst"]
+[gd_scene load_steps=19 format=3 uid="uid://2yafl3pdmqst"]
 
 [ext_resource type="Script" path="res://scripts/Escritorio.gd" id="1_lbguu"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_mu3e0"]
 [ext_resource type="Texture2D" uid="uid://dipxbeef0uovo" path="res://art/sprites/WhatsApp Image 2025-04-22 at 14.00.50.jpeg" id="3_qvcu1"]
 [ext_resource type="PackedScene" uid="uid://vx88t6wuvhsv" path="res://scenes/Transição.tscn" id="4_d7s4i"]
+[ext_resource type="Texture2D" uid="uid://dg6i3k2v8sv8r" path="res://art/sprites/transicao_helicoptero.png" id="5_36kr4"]
+[ext_resource type="AudioStream" uid="uid://8mapcbuh6dlt" path="res://art/sounds/Recording.mp3" id="6_2pkdp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74j2c"]
 size = Vector2(134, 132.5)
@@ -118,5 +120,16 @@ shape = SubResource("RectangleShape2D_5op7q")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="TransicaoHeli" type="TextureRect" parent="."]
+visible = false
+offset_left = -183.0
+offset_top = -246.0
+offset_right = 2057.0
+offset_bottom = 1454.0
+texture = ExtResource("5_36kr4")
+
+[node name="HelicopteroSom" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_2pkdp")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
