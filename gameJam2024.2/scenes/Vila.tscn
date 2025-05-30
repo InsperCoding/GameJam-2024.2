@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bbplk80jib5pl"]
+[gd_scene load_steps=23 format=4 uid="uid://bbplk80jib5pl"]
 
 [ext_resource type="Script" path="res://scripts/vila.gd" id="1_n7iu0"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="2_da6p1"]
@@ -11,7 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://d0k7oqmm5mm7y" path="res://scenes/elements/fogueira.tscn" id="9_dcm3n"]
 [ext_resource type="PackedScene" uid="uid://ibv0dvjf0dny" path="res://scenes/elements/rede.tscn" id="10_b5d2t"]
 [ext_resource type="Script" path="res://scenes/daynightcycle.gd" id="11_uouy2"]
-[ext_resource type="PackedScene" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
+[ext_resource type="PackedScene" uid="uid://bnvuaggonixrw" path="res://scenes/NPC_3.tscn" id="12_fwurf"]
+[ext_resource type="PackedScene" uid="uid://b3q7cskjxm1hl" path="res://scenes/hotbar.tscn" id="13_gcedu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwq43"]
 texture = ExtResource("2_da6p1")
@@ -3905,6 +3906,13 @@ texture = SubResource("GradientTexture2D_y15ns")
 color = Color(0.392157, 0.431373, 0.588235, 1)
 script = ExtResource("11_uouy2")
 gradient = SubResource("GradientTexture1D_vrlff")
+
+[node name="Hotbar" parent="." groups=["hotbar"] instance=ExtResource("13_gcedu")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+grow_vertical = 0
 
 [editable path="Doors/Door_Oca1"]
 [editable path="Doors/Door_Oca2"]
