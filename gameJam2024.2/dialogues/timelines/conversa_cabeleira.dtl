@@ -29,10 +29,18 @@ Protagonista: Isso pertence a Cuca.
 Protagonista: Ou você quer extender essa maldição nessa vila?
 leave Protagonista
 join iracema center
-iracema: Não me fala mais nada.
-iracema: Se isso for da {Cuca}, tira isso de mim!
+iracema: Sério!?
+iracema: Por isso que isso é TÃO belo!
 leave iracema
 join Protagonista left
-Protagonista: ...ok então...
-Protagonista: (Não esperava que isso acontecesse tão rápido)
+Protagonista: (A vaidade dessa mulher é tão grande que tá tirando o ar dessa oca...)
+leave Protagonista
+join iracema center
+iracema: Mas digo o seguinte...
+iracema: Se trouxer um peixe do rio perto aqui, eu te devolvo a peruca.
+iracema: Que tal?
+leave iracema
+join Protagonista left
+Protagonista: Trato.
+Protagonista: (Bem extranha essa troca, mas ok...)
 [end_timeline]

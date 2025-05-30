@@ -16,14 +16,14 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_area_entered(body: CharacterBody2D) -> void:
 	if body.is_in_group("player"):
-		player_in_range = true
-		print("NPC.player_in_range = " + str(player_in_range))
-		
-		if Input.is_action_just_pressed("interact"):
-			Dialogic.start("com_a_cuca")
-		
+		Dialogic.start("com_a_cuca")
 
 
 func _on_area_2d_area_exited(body: CharacterBody2D) -> void:
 	player_in_range = false
 	print("NPC.player_in_range = " + str(player_in_range))
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("player"):
+		Dialogic.start("com_a_cuca")

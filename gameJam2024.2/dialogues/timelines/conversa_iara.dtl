@@ -1,0 +1,37 @@
+join Protagonista left
+Protagonista: (Vejo uma bela mulher submersa no rio, vocalizando uma melodia.)
+Protagonista: (Uma melodia bela, capaz de por qualquer homem em um transe profundo, se jogar nas águas e ficar submerso para sempre...)
+Protagonista: (Porém, tão rápido esse sentimento surge, a canção para.)
+Protagonista: (E a mulher...)
+(...minto, a sereia percebe a minha presença.)
+leave Protagonista
+join iara right
+iara: Uma cara nova...
+iara: Sabe, eu estava em dúvida se realmente tinham forasteiros nessas redondezas.
+iara: Então te darei ouvidos a qualquer coisa que falar.
+leave iara
+join Protagonista left
+Protagonista: Bom, é uma longa história...
+Protagonista: ...mas queria pegar um peixe especial para entregar para uma mulher que, em troca, vai devolver a cabeleira da Cuca.
+leave Protagonista
+join iara right
+iara: ...
+iara: Ok, já ouvi coisas mais malucas.
+iara: E claro, darei esse peixe que tanto cobiça.
+leave iara
+join Protagonista left
+Protagonista: Bom, isso foi rá-
+leave Protagonista
+join iara right
+iara: Sob uma condição.
+leave iara
+join Protagonista left
+Protagonista: (...é CLARO que não seria tão simples assim...)
+leave Protagonista
+join iara right
+iara: Quero que recupere meu espelho pra mim.
+iara: Agora vá, não perca tempo!
+leave iara
+join Protagonista left
+Protagonista: (Acredite, eu também não quero perder tempo com isso...)
+[end_timeline]

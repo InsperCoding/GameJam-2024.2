@@ -19,3 +19,5 @@ func _on_option_button_item_selected(index: int, button_index: int) -> void:
 	#print(botao.get_item_text(botao.get_selected_id()))
 	#print(painel.text)
 	Dialogic.VAR.set_variable(painel.text, botao.get_item_text(botao.get_selected_id()))
+
+	Global.traducoes_selecionadas[button_index - 2] = botao.get_selected_id()

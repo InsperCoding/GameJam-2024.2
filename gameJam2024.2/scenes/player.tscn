@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ce7dgeftq7nip"]
+[gd_scene load_steps=17 format=3 uid="uid://ce7dgeftq7nip"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_m0p50"]
 [ext_resource type="Texture2D" uid="uid://drk7xqnhbuuhj" path="res://art/sprites/Protagonista/protagonista_frente.png" id="2_fich1"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://gha2wejkc06o" path="res://art/sprites/Protagonista/protagonista_direita2.png" id="10_0lnrh"]
 [ext_resource type="Texture2D" uid="uid://pueni5n57h2w" path="res://art/sprites/Protagonista/protagonista_costas1.png" id="12_k75nj"]
 [ext_resource type="Texture2D" uid="uid://1306jxq2uau7" path="res://art/sprites/Protagonista/protagonista_costas2.png" id="13_1ibod"]
+[ext_resource type="PackedScene" uid="uid://dlv6ui3yysfav" path="res://scenes/Diario.tscn" id="14_1tkw0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_60dd4"]
 animations = [{
@@ -108,3 +109,12 @@ animation = &"up_walk"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5.5, 63)
 shape = SubResource("RectangleShape2D_uoe6w")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Diario" parent="." instance=ExtResource("14_1tkw0")]
+visible = false
+offset_left = -977.0
+offset_top = -561.0
+offset_right = -977.0
+offset_bottom = -561.0

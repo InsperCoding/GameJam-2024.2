@@ -21,7 +21,15 @@ func _physics_process(delta: float) -> void:
 		
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("open_diary"):
-		$"Diario".visible = !$"Diario".visible
+		$Diario.visible = !$Diario.visible
+		
+		#if $Diario.visible:
+		for i in range(Global.num_palavras_novas):
+			var label = $Diario.get_child(0).get_child(i+1)
+			label.show()
+			label.text = Global.palavras_ouvidas[i]
+			var botao = $Diario.get_child(0).get_child(i+1).get_child(0)
+			botao.selected = Global.traducoes_selecionadas[i]
 
 func player_movement(_delta):
 	if Input.is_action_pressed("right"):
@@ -89,4 +97,4 @@ func player_anim(mov_constant):
 
 
 func _on_option_button_item_selected(index: int) -> void:
-	Dialogic.VAR.homem1_1 = $"../Diario/OptionButton".get_item_text($"../Diario/OptionButton".get_selected_id())
+	Dialogic.VAR.homem1_1 = $"/Diario/OptionButton".get_item_text($"/Diario/OptionButton".get_selected_id())
