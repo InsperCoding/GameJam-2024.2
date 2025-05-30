@@ -19,7 +19,7 @@ func _on_area_2d_area_entered(body: CharacterBody2D) -> void:
 		print("NPC.player_in_range = " + str(player_in_range))
 		
 		if Input.is_action_just_pressed("interact"):
-			Dialogic.start("peruca")
+			Dialogic.start("peruca1")
 		
 
 
