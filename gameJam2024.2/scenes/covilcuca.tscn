@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://c828njuvp7hn4"]
+[gd_scene load_steps=10 format=4 uid="uid://c828njuvp7hn4"]
 
 [ext_resource type="Texture2D" uid="uid://tjs5e0ha3osn" path="res://art/sprites/tileset/cave.png" id="1_bllou"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="1_hny1o"]
@@ -327,10 +327,10 @@ tile_set = SubResource("TileSet_vswsf")
 
 [node name="player" parent="." instance=ExtResource("1_hny1o")]
 z_index = 1
-position = Vector2(1939, 1821)
+position = Vector2(1243, 651)
 
 [node name="Camera2D2" type="Camera2D" parent="player"]
-position = Vector2(0, 4)
+position = Vector2(-2, 8)
 
 [node name="Cuca" parent="." instance=ExtResource("4_hmjkm")]
 z_index = 1
@@ -364,6 +364,6 @@ spawn_direction = "down"
 position = Vector2(178.857, 57.4286)
 
 [node name="Spawn" parent="Doors/Door_Vila" index="1"]
-position = Vector2(175, 78.4286)
+position = Vector2(181.714, 77)
 
 [editable path="Doors/Door_Vila"]
