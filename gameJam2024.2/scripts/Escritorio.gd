@@ -19,7 +19,7 @@ func _on_timer_timeout() -> void:
 	imagem_node.visible = true
 	helicoptero_som_player.play() 
 	
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(3.0).timeout
 	
 	imagem_node.visible = false 
 	helicoptero_som_player.stop()
