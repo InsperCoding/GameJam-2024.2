@@ -6,13 +6,17 @@ var ja_interagiu = false
 func interacao() -> void:
 	if !ja_interagiu:
 		ja_interagiu = true
-		Global.num_palavras_novas += 1
 		
 		for palavra in get_meta("novas_palavras"):
-			Dialogic.VAR.set_variable(palavra, palavra)
-			var label = $"../player/Diario".get_children()[0].get_children()[Global.num_palavras_novas]
-			label.show()
-			label.text = palavra
+			if !Global.palavras_ouvidas.has(palavra):
+				Global.palavras_ouvidas.append(palavra)
+				Global.traducoes_selecionadas.append(-1)
+				
+				Global.num_palavras_novas += 1
+				Dialogic.VAR.set_variable(palavra, palavra)
+				var label = $"../player/Diario".get_children()[0].get_children()[Global.num_palavras_novas]
+				label.show()
+				label.text = palavra
 			
 	#Dialogic.start("conversa_homem1")
 	Dialogic.start(get_meta("dialogo"))
