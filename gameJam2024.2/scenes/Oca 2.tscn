@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b0fotgheb67a3"]
 
 [ext_resource type="Script" path="res://scenes/oca_2.gd" id="1_dwcqh"]
-[ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="2_i63qu"]
+[ext_resource type="Texture2D" uid="uid://bgq7mtlrog2lv" path="res://art/sprites/interioroca1.png" id="2_cphtm"]
 [ext_resource type="PackedScene" uid="uid://ce7dgeftq7nip" path="res://scenes/player.tscn" id="3_p5ina"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="5_nwih7"]
 [ext_resource type="Texture2D" uid="uid://congfx6f44m2l" path="res://art/sprites/Nativos/cicique_direita.png" id="5_owfew"]
@@ -9,13 +9,14 @@
 [node name="Oca2" type="Node2D"]
 script = ExtResource("1_dwcqh")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(960, 538.75)
-scale = Vector2(1.875, 1.05713)
-texture = ExtResource("2_i63qu")
+[node name="Interioroca1" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(982.1, 623.9)
+scale = Vector2(1.4, 1.15)
+texture = ExtResource("2_cphtm")
 
 [node name="player" parent="." instance=ExtResource("3_p5ina")]
-position = Vector2(1107, 580)
+position = Vector2(983, 803)
 
 [node name="Doors" type="Node" parent="."]
 
@@ -26,14 +27,15 @@ destination_door_tag = "Oca2"
 spawn_direction = "down"
 
 [node name="CollisionShape2D" parent="Doors/Door_Oca2" index="0"]
-position = Vector2(136.429, 138.286)
+position = Vector2(140.429, 141.571)
 
 [node name="Spawn" parent="Doors/Door_Oca2" index="1"]
-position = Vector2(135.714, 116.714)
+position = Vector2(140.429, 118.571)
 
 [node name="CiciqueDireita" type="Sprite2D" parent="."]
-position = Vector2(448, 502)
+position = Vector2(1331, 603)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("5_owfew")
+flip_h = true
 
 [editable path="Doors/Door_Oca2"]
