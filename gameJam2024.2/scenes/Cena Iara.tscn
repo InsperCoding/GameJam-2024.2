@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://d08jc6wfkjygr"]
+[gd_scene load_steps=16 format=4 uid="uid://d08jc6wfkjygr"]
 
 [ext_resource type="Script" path="res://scripts/cena_iara.gd" id="1_r4wog"]
 [ext_resource type="Texture2D" uid="uid://cmijy1dibase7" path="res://art/sprites/tileset/tileset (2).png" id="1_wpega"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://iddji60sroyb" path="res://art/sprites/tileset/tileset completo.png" id="3_g5cqu"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="4_puuot"]
 [ext_resource type="PackedScene" uid="uid://cged27wxxodn4" path="res://scenes/elements/iara.tscn" id="6_0cdjt"]
+[ext_resource type="PackedScene" uid="uid://chsiw8biybyty" path="res://scenes/elements/arvore_1.tscn" id="7_kgkjr"]
+[ext_resource type="PackedScene" uid="uid://c3a5mxyy2c1hs" path="res://scenes/elements/arvore_2.tscn" id="8_4kb57"]
+[ext_resource type="PackedScene" uid="uid://da2qalyekfsus" path="res://scenes/elements/arvore_3.tscn" id="9_vmsuy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ers5x"]
 texture = ExtResource("1_wpega")
@@ -7790,5 +7793,19 @@ position = Vector2(850, 573)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(1, 544, 91, 577, 222, 531, 389, 584, 553, 604, 686, 620, 767, 635, 845, 632, 938, 592, 1031, 572, 1072, 572, 1140, 572, 1190, 569, 1243, 529, 1326, 524, 1354, 524, 1382, 536, 1404, 572, 1450, 539, 1480, 511, 1518, 509, 1583, 509, 1659, 491, 1744, 476, 1802, 453, 1891, 448, 1923, 444, 1917, 1079, -1, 1085, 34, 399, -52, 1129, 2040, 1097, 1919, 310)
+
+[node name="Arvores" type="Node" parent="."]
+
+[node name="Arvore1" parent="Arvores" instance=ExtResource("7_kgkjr")]
+position = Vector2(166, 923)
+
+[node name="Arvore2" parent="Arvores" instance=ExtResource("8_4kb57")]
+position = Vector2(1706, 1019)
+
+[node name="Arvore3" parent="Arvores" instance=ExtResource("9_vmsuy")]
+position = Vector2(1891, 884)
+
+[node name="Arvore4" parent="Arvores" instance=ExtResource("8_4kb57")]
+position = Vector2(351, 1115)
 
 [editable path="Doors/Door_Iara"]
