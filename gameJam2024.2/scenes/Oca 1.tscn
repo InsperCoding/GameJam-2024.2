@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://1nplt8pwrhym" path="res://art/sprites/interioroca.png" id="4_4jwab"]
 [ext_resource type="PackedScene" uid="uid://chpkx2pec4n12" path="res://scenes/Portal.tscn" id="4_ujgr0"]
 [ext_resource type="PackedScene" uid="uid://by0mmmr2gijmk" path="res://scenes/elements/door.tscn" id="5_oaau5"]
-[ext_resource type="PackedScene" path="res://scenes/Jefferson.tscn" id="7_37sqa"]
+[ext_resource type="PackedScene" uid="uid://by8m2lmmr75je" path="res://scenes/Jefferson.tscn" id="7_37sqa"]
 
 [node name="Oca1" type="Node2D"]
 script = ExtResource("1_w3rpt")

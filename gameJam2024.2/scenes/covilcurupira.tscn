@@ -348,4 +348,9 @@ position = Vector2(1920, 2299)
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("6_bm6qs")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-14, 2488, -10, 1528, 48, 1528, 52, 1411, 192, 1402, 192, 1272, 299, 1272, 326, 1155, 573, 1151, 573, 1021, 798, 1016, 825, 868, 1193, 886, 1206, 751, 1570, 760, 1575, 630, 2374, 630, 2383, 738, 2845, 760, 2854, 872, 3258, 899, 3263, 976, 3384, 998, 3379, 1133, 3514, 1151, 3528, 1259, 3810, 1277, 3824, 2484, -262, 2498, 4387, 3085, 4597, 2, -411, -314)
+
 [editable path="Doors/Door_Curupira"]

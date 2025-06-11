@@ -327,10 +327,14 @@ tile_set = SubResource("TileSet_vswsf")
 
 [node name="player" parent="." instance=ExtResource("1_hny1o")]
 z_index = 1
-position = Vector2(1243, 651)
+position = Vector2(2207, 1427)
 
 [node name="Camera2D2" type="Camera2D" parent="player"]
 position = Vector2(-2, 8)
+limit_left = 0
+limit_top = 0
+limit_right = 3840
+limit_bottom = 3080
 
 [node name="Cuca" parent="." instance=ExtResource("4_hmjkm")]
 z_index = 1
@@ -365,5 +369,10 @@ position = Vector2(178.857, 57.4286)
 
 [node name="Spawn" parent="Doors/Door_Vila" index="1"]
 position = Vector2(181.714, 77)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-4, 3071, 2, 2478, 182, 2502, 188, 2436, 380, 2436, 389, 2368, 514, 2368, 513, 2305, 631, 2304, 639, 2240, 766, 2245, 761, 2178, 945, 2176, 955, 2048, 1079, 2039, 1079, 1662, 180, 913, 308, 889, 318, 820, 444, 818, 444, 768, 574, 765, 562, 689, 681, 694, 698, 635, 1026, 632, 1025, 562, 1146, 559, 1146, 442, 1330, 445, 1340, 619, 1467, 629, 1473, 756, 1603, 759, 1613, 896, 1721, 886, 1721, 931, 1846, 943, 1866, 1021, 2350, 1026, 2366, 955, 2481, 952, 2491, 884, 2598, 884, 2605, 814, 2686, 804, 2679, 699, 2713, 689, 2733, 622, 2871, 629, 2871, 703, 3261, 699, 3276, 815, 3334, 824, 3327, 885, 3591, 901, 3588, 1155, 3546, 1170, 3527, 1278, 3327, 1297, 3330, 1361, 3105, 1364, 3076, 1472, 2959, 1475, 2943, 1551, 2832, 1558, 2822, 2031, 2861, 2037, 2883, 2085, 2940, 2088, 2943, 2158, 3829, 2174, 3835, 3061, -231, 3073, 3983, 3384, 3767, -209, -852, 308)
 
 [editable path="Doors/Door_Vila"]
